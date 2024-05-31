@@ -1,0 +1,25 @@
+---
+  interface Props{
+    img: string
+    text: string
+    title:string 
+  }
+
+  const { img, text,title } = Astro.props;
+
+---
+
+<div class="max-w-64 h-[324px]  flex flex-col gap-4 bg-fifth p-4 py-8 ">
+    <figure>
+        <img src={img} alt="">
+    </figure>
+    <div>
+        <h3 class="font-bold">{title}</h3>
+        <p>
+            {text}
+        </p>
+
+    </div>
+
+
+</div>
