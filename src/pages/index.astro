@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Main from "../components/Main.astro";
-import Benefits from "../components/section/Benefits.astro"
+import Benefits from "../components/section/Benefits.astro";
+import Plans from "../components/section/Plans.astro";
+import Service from "../components/section/Service.astro";
+
+
 ---
 
 <Layout title="Gigamas,el internet que te da mas.">
@@ -34,7 +37,7 @@ import Benefits from "../components/section/Benefits.astro"
 				</button>
 			</div>
 			<!-- Mobile -->
-			<div class="w-full h-16 p-4 flex justify-between items-center">
+			<div class="w-full h-16 p-4 flex justify-between items-center md:hidden">
 				<strong> GIGAMAS</strong>
 				<figure>
 					<img src="menu.svg" alt="" />
@@ -42,13 +45,25 @@ import Benefits from "../components/section/Benefits.astro"
 			</div>
 		</div>
 		<!-- slider -->
-		<div class="w-full bg-secondary h-[500px]"></div>
+		<div class="w-full bg-secondary ">
+			<img src="banner_gigamas.png" alt="">
+		</div>
 		<!-- form  -->
 		<div class="w-full bg-third p-4 py-16">
-			<h2 class="text-xl  mb-8 text-center">Dejanos tu información, y te Contactaremos.</h2>
-			<div class="flex gap-4 flex-wrap justify-center ">
-				<input type="text" class="w-36 h-8 bg-primary rounded-full px-4" placeholder="nombre"/>
-				<input type="text" class="w-36 h-8 bg-primary rounded-full px-4" placeholder="telefono"/>
+			<h2 class="text-xl mb-8 text-center">
+				Dejanos tu información, y te Contactaremos.
+			</h2>
+			<div class="flex gap-4 flex-wrap justify-center">
+				<input
+					type="text"
+					class="w-36 h-8 bg-primary rounded-full px-4"
+					placeholder="nombre"
+				/>
+				<input
+					type="text"
+					class="w-36 h-8 bg-primary rounded-full px-4"
+					placeholder="telefono"
+				/>
 				<select class="w-36 h-8 rounded-full px-4">
 					<option value="internet">Internet</option>
 					<option value="internet_cable">Cable TV</option>
@@ -57,20 +72,21 @@ import Benefits from "../components/section/Benefits.astro"
 				</select>
 			</div>
 			<div class="flex justify-center my-4">
-				<button class="bg-fourth px-16 py-2 rounded-full text-white"> Enviar</button>
+				<button class="bg-fourth px-16 py-2 rounded-full text-white">
+					Enviar</button
+				>
 			</div>
 		</div>
-		
-		
-		<!-- beneficios -->
-		 
-			<Benefits>
 
-
-		<div class="h-64">
-			
+		
+		<div>
+			<Benefits >
 		</div>
+		<Plans />
+		<Service/>
+		<!-- <Location/> -->
+		<div class="h-64"></div>
 	</main>
-</Layout>
 
-<style></style>
+	<style></style>
+</Layout>

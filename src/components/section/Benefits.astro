@@ -4,13 +4,14 @@ import CardBenefit from "../CardBenefit.astro"
 
 ---
 
-<div class="p-4 py-16">
-    <h4 class="text-xs text-center mb-2">TU MEJOR OPCIÓN EN CONECTIVIDAD</h4>
-    <h2 class="text-2xl text-center font-extrabold mb-8">Descubre los Beneficios de Nuestro Servicio de Internet </h2>
+<div class="p-5 py-16">
+    <h4 class="text-xs text-center mb-2 text-sixth/70 font-extrabold">TU MEJOR OPCIÓN EN CONECTIVIDAD</h4>
+    <h2 class="text-2xl text-center font-extrabold mb-8 md:mb-16">Descubre los Beneficios de Nuestro Servicio de Internet </h2>
     <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"> -->
-    <div class="flex  gap-4 flex-wrap justify-center items-center">
+    <div class="flex  gap-4 flex-wrap justify-center items-center ">
         {
             dataBenefits.map(item=> <CardBenefit img={item.img} title={item.title} text={item.text} />)
         }
     </div>
+
 </div>

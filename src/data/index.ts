@@ -20,3 +20,26 @@ export const dataBenefits = [
         text:"Estamos aquí para ti. Conecta todos tus dispositivos sin perder rendimiento, ideal para videollamadas, streaming y juegos en línea."
     }
 ]
+
+export const dataPlans =[
+    {
+        megasBefore:40,
+        megasNow: 80,
+        price:50,
+    },
+    {
+        megasBefore:50,
+        megasNow: 100,
+        price:50,
+    },
+    {
+        megasBefore:70,
+        megasNow: 140,
+        price:50,
+    },
+    {
+        megasBefore:100,
+        megasNow: 200,
+        price:50,
+    },
+]

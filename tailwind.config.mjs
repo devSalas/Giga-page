@@ -9,6 +9,7 @@ export default {
 				"third":"#FF5A21",
 				"fourth":"#002179",
 				"fifth":"#F5F5F5",
+				"sixth":"#5A5858",
 				"cprimary":"#FFFFFF",
 				"csecondary":"#F64D13",
 				"cthird":"#F64D13",
