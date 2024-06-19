@@ -3,21 +3,22 @@ import Layout from "../layouts/Layout.astro";
 import Benefits from "../components/section/Benefits.astro";
 import Plans from "../components/section/Plans.astro";
 import Service from "../components/section/Service.astro";
-
-
+import Location from "../components/section/Location.astro";
+import Terms from "../components/section/Terms.astro";
+import Footer from "../components/section/Footer.astro";
 ---
 
 <Layout title="Gigamas,el internet que te da mas.">
 	<main class="">
 		<!-- type bussines -->
 		<div class="w-full flex justify-end max-w-7xl m-auto">
-			<div class="rounded-b-lg overflow-hidden mb-4">
-				<a href="" class="bg-secondary p-2 text-cprimary">Hogar</a>
-				<a href="" class="p-2 text-black">Corporación</a>
+			<div class="rounded-b-lg overflow-hidden flex">
+				<a href="" class="inline-block bg-fourth px-6 py-1 text-cprimary">Hogar</a>
+				<a href="" class="px-4 py-1 text-black bg-slate-100">Corporación</a>
 			</div>
 		</div>
 		<!-- header -->
-		<div>
+		<div class="mb-4">
 			<!-- desktop -->
 			<div
 				class="hidden w-full md:flex justify-between items-center max-w-7xl m-auto"
@@ -25,19 +26,21 @@ import Service from "../components/section/Service.astro";
 				<figure>
 					<img src="gigamas_logo.png" alt="" />
 				</figure>
-				<nav>
+				<nav class="flex gap-8">
 					<a href="">Home</a>
 					<a href="">Planes</a>
 					<a href="">Contacto</a>
 				</nav>
 				<button
-					class="bg-secondary p-2 px-8 text-cprimary rounded-full"
+					class="bg-fourth p-2 px-8 text-cprimary rounded-full"
 				>
 					CONTACTAR AHORA
 				</button>
 			</div>
 			<!-- Mobile -->
-			<div class="w-full h-16 p-4 flex justify-between items-center md:hidden">
+			<div
+				class="w-full h-16 p-4 flex justify-between items-center md:hidden"
+			>
 				<strong> GIGAMAS</strong>
 				<figure>
 					<img src="menu.svg" alt="" />
@@ -45,16 +48,16 @@ import Service from "../components/section/Service.astro";
 			</div>
 		</div>
 		<!-- slider -->
-		<div class="w-full bg-secondary ">
-			<img src="banner_gigamas.png" alt="">
+		<div class="w-full bg-secondary">
+			<img src="bg_prueba.webp" alt="" />
 		</div>
 		<!-- form  -->
-		<div class="w-full bg-third p-4 py-16">
-			<h2 class="text-xl mb-8 text-center">
-				Dejanos tu información, y te Contactaremos.
+		<div class="w-full bg-fourth p-4 py-16 mb-16">
+			<h2 class=" mb-8 text-center text-3xl font-bold">
+				<span class="text-csecondary">Dejanos Tu Información,</span> <br><span class="text-cprimary"> te Contactaremos.</span>
 			</h2>
-			<div class="flex gap-4 flex-wrap justify-center">
-				<input
+			<div class="flex gap-4 flex-wrap justify-center mb-16">
+				<inputfd
 					type="text"
 					class="w-36 h-8 bg-primary rounded-full px-4"
 					placeholder="nombre"
@@ -72,21 +75,60 @@ import Service from "../components/section/Service.astro";
 				</select>
 			</div>
 			<div class="flex justify-center my-4">
-				<button class="bg-fourth px-16 py-2 rounded-full text-white">
+				<button class="bg-secondary px-16 py-2 rounded-full text-white">
 					Enviar</button
 				>
 			</div>
 		</div>
 
-		
-		<div>
-			<Benefits >
-		</div>
-		<Plans />
-		<Service/>
-		<!-- <Location/> -->
-		<div class="h-64"></div>
-	</main>
+		<!-- <div class="max-w-md m-auto mt-16 rounded-xl p-4 py-16 mb-16">
+			<h2 class="text-xl mb-8 text-center">
+				Dejanos tu información y te Contactaremos.
+			</h2>
+			<div class="border-2 border-secondary px-4 py-8 rounded-xl">
+				<div class="flex flex-col gap-4 justify-center">
+					<input
+						type="text"
+						class="w-full h-12 outline-none bg-slate-200 rounded-xl text-center"
+						placeholder="Escribe tu Nombre"
+					/>
+					<input
+						type="text"
+						class="w-full h-12 outline-none bg-slate-200 rounded-xl text-center"
+						placeholder="Escribe tu Celular"
+					/>
+					<div class="">
+						<select
+							class="w-full h-12 outline-none bg-slate-200 rounded-xl text-center"
+						>
+							<option class="w-4" value="internet"
+								>Internet</option
+							>
+							<option value="internet_cable" class="">Cable TV</option>
+							<option value="cable">Internet + cable</option> px-4
+							<option value="cámaras">Cámaras</option>
+						</select>
+					</div>
+				</div>
+				<div class="flex justify-center my-4">
+					<button
+						class="bg-fourth px-16 py-2 rounded-full text-white"
+					>
+						Enviar</button
+					>
+				</div>
+			</div>
+		</div> -->
 
-	<style></style>
+		<div>
+			<Benefits />
+			<Plans />
+			<Service />
+			<Location />
+			<Terms />
+			<Footer />
+		</div>
+
+		<style></style>
+	</main>
 </Layout>

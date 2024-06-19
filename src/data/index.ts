@@ -16,30 +16,62 @@ export const dataBenefits = [
     },
     {
         img: "laptop.png",
-        title: "Mayor Ancho de Banda",  
-        text:"Estamos aquí para ti. Conecta todos tus dispositivos sin perder rendimiento, ideal para videollamadas, streaming y juegos en línea."
+        title: "Mayor Ancho de Banda",
+        text: "Estamos aquí para ti. Conecta todos tus dispositivos sin perder rendimiento, ideal para videollamadas, streaming y juegos en línea."
     }
 ]
 
-export const dataPlans =[
+export const dataPlans = [
     {
-        megasBefore:40,
+        megasBefore: 40,
         megasNow: 80,
-        price:50,
+        price: 50,
     },
     {
-        megasBefore:50,
+        megasBefore: 50,
         megasNow: 100,
-        price:50,
+        price: 50,
     },
     {
-        megasBefore:70,
+        megasBefore: 70,
         megasNow: 140,
-        price:50,
+        price: 50,
     },
     {
-        megasBefore:100,
+        megasBefore: 100,
         megasNow: 200,
-        price:50,
+        price: 50,
     },
 ]
+
+export const dataTerms = [
+    {
+        title: "hola",
+        description: "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    },
+    {
+        title: "hola",
+        description: "lodsdsdsds"
+    },
+]
+
+
+export const dataFooter = {
+
+    social_media: {
+        facebook: {
+            img: "icon/facebook.svg",
+            link: "https://www.facebook.com/Gigamas.pe"
+        },
+        instagram: {
+            img: "icon/instagram.svg",
+            link: "https://www.instagram.com/gigamas.pe/?hl=es-la"
+        },
+        tiktok:{
+            img:"icon/tiktok.svg",
+            link:"https://www.tiktok.com/@gigamas.pe"
+        }
+    }
+
+
+}

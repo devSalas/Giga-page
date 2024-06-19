@@ -1,0 +1,44 @@
+---
+import { dataFooter} from "../../data";
+
+const {social_media} =dataFooter 
+---
+<div class=" pt-16 pb-32   px-4 bg-secondary w-full">
+    <div class="max-w-7xl m-auto  flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between">
+        <!-- title bussines -->
+        <div class="mb-4">
+            <h2 class="text-center md:text-start text-3xl font-bold mb-4 text-white">GIGAMAS</h2>
+            <p class="sm:max-w-sm lg:max-w-md text-slate-300">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                dolores, velit alias tempore ducimus ratione ea, rem deleniti
+                officiis qui excepturi deserunt sunt placeat? Hic porro
+                doloremque mollitia ducimus ut.
+            </p>
+        </div>
+        <!-- redes -->
+        <div>
+            <h2 class="text-center  font-medium mb-6 text-white text-2xl">Redes Sociales</h2>
+            <div class="flex gap-8 text-slate-300">
+                <a  href={social_media.tiktok.link} class="w-8 hover:scale-125 transition duration-300 ease-in-out" target="_blank"  rel="noopener noreferrer" >
+                    <img src={social_media.tiktok.img} alt="">
+                </a>
+                <a  href={social_media.facebook.link} class="w-8  hover:scale-125 transition duration-300 ease-in-out" target="_blank"  rel="noopener noreferrer">
+                    <img src={social_media.facebook.img}  alt="">
+                </a>
+                <a href={social_media.instagram.link} class="w-8  hover:scale-105 transition duration-300 ease-in-out" target="_blank"  rel="noopener noreferrer">
+                    <img src={social_media.instagram.img}  alt="">
+                </a>
+            </div>
+        </div> 
+
+        <!-- contactos -->
+        <div class="flex flex-col gap-4 text-slate-300">
+            <h2 class="text-cprimary text-center font-bold  mb-6  text-2xl">Contactos</h2>
+            <p class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"> <img class="" src="copy.svg" alt=""> esalassulca@gmail.com</p>
+            <p class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"> <img class="" src="copy.svg" alt=""> 927 859 435</p>
+            <p class="bg-white/70 text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105  transition duration-300 ease-in-out"> <img class="" src="copy.svg" alt=""> 927 859 435</p>
+          
+           
+        </div>
+    </div>
+</div>

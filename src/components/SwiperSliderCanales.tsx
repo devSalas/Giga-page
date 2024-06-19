@@ -44,7 +44,7 @@ const SwiperSliderCanales = () => {
                     spaceBetween: 50,
                 },
             }}
-            className="mySwiper relative  border-2 border-black z-[10]  w-full h-36 rounded-xl mb-16 mt-8 transition-all duration-100 ease-linear "
+            className="mySwiper relative  border-2 border-black/50 z-[10]  w-full h-36 rounded-xl mb-16 mt-8 transition-all duration-100 ease-linear "
 
         >
 
