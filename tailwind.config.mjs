@@ -3,6 +3,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			backgroundImage:{
+				"form":"linear-gradient(to bottom, #072b89, #00256f, #001e55, #00163b, #020b23);"
+			},
 			colors:{
 				"primary":"#FFFFFF",
 				"secondary":"#F64D13",

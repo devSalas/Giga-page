@@ -6,17 +6,18 @@ import Service from "../components/section/Service.astro";
 import Location from "../components/section/Location.astro";
 import Terms from "../components/section/Terms.astro";
 import Footer from "../components/section/Footer.astro";
+import BottomWhatsapp from "../components/BottomWhatsapp.astro";
 ---
 
 <Layout title="Gigamas,el internet que te da mas.">
 	<main class="">
 		<!-- type bussines -->
-		<div class="w-full flex justify-end max-w-7xl m-auto">
+		<!-- <div class="w-full flex justify-end max-w-7xl m-auto">
 			<div class="rounded-b-lg overflow-hidden flex">
 				<a href="" class="inline-block bg-fourth px-6 py-1 text-cprimary">Hogar</a>
 				<a href="" class="px-4 py-1 text-black bg-slate-100">Corporación</a>
 			</div>
-		</div>
+		</div> -->
 		<!-- header -->
 		<div class="mb-4">
 			<!-- desktop -->
@@ -27,15 +28,12 @@ import Footer from "../components/section/Footer.astro";
 					<img src="gigamas_logo.png" alt="" />
 				</figure>
 				<nav class="flex gap-8">
-					<a href="">Home</a>
-					<a href="">Planes</a>
-					<a href="">Contacto</a>
+					<a href="#planes">Planes</a>
+					<a href="#contacto">Contacto</a>
 				</nav>
-				<button
-					class="bg-fourth p-2 px-8 text-cprimary rounded-full"
-				>
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=" class="bg-fourth p-2 px-8 text-cprimary rounded-full">
 					CONTACTAR AHORA
-				</button>
+				</a>
 			</div>
 			<!-- Mobile -->
 			<div
@@ -52,22 +50,23 @@ import Footer from "../components/section/Footer.astro";
 			<img src="bg_prueba.webp" alt="" />
 		</div>
 		<!-- form  -->
-		<div class="w-full bg-fourth p-4 py-16 mb-16">
-			<h2 class=" mb-8 text-center text-3xl font-bold">
-				<span class="text-csecondary">Dejanos Tu Información,</span> <br><span class="text-cprimary"> te Contactaremos.</span>
+		<div class="w-full bg-form p-4 py-16 mb-16">
+			<h2 class="mb-8 text-center text-3xl font-bold">
+				<span class="text-csecondary">Dejanos Tu Información,</span>
+				<br /><span class="text-cprimary"> te Contactaremos.</span>
 			</h2>
-			<div class="flex gap-4 flex-wrap justify-center mb-16">
-				<inputfd
+			<div class="flex gap-4 flex-wrap justify-center mb-8">
+				<input
 					type="text"
-					class="w-36 h-8 bg-primary rounded-full px-4"
+					class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4"
 					placeholder="nombre"
 				/>
 				<input
 					type="text"
-					class="w-36 h-8 bg-primary rounded-full px-4"
+					class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4"
 					placeholder="telefono"
 				/>
-				<select class="w-36 h-8 rounded-full px-4">
+				<select class="w-36 h-8 md:w-56 md:h-12 rounded-full px-4">
 					<option value="internet">Internet</option>
 					<option value="internet_cable">Cable TV</option>
 					<option value="cable">Internet + cable</option> px-4
@@ -75,60 +74,28 @@ import Footer from "../components/section/Footer.astro";
 				</select>
 			</div>
 			<div class="flex justify-center my-4">
-				<button class="bg-secondary px-16 py-2 rounded-full text-white">
+				<button
+					class="bg-secondary px-16 py-2 md:w-56 md:h-12 rounded-full text-white"
+				>
 					Enviar</button
 				>
 			</div>
 		</div>
 
-		<!-- <div class="max-w-md m-auto mt-16 rounded-xl p-4 py-16 mb-16">
-			<h2 class="text-xl mb-8 text-center">
-				Dejanos tu información y te Contactaremos.
-			</h2>
-			<div class="border-2 border-secondary px-4 py-8 rounded-xl">
-				<div class="flex flex-col gap-4 justify-center">
-					<input
-						type="text"
-						class="w-full h-12 outline-none bg-slate-200 rounded-xl text-center"
-						placeholder="Escribe tu Nombre"
-					/>
-					<input
-						type="text"
-						class="w-full h-12 outline-none bg-slate-200 rounded-xl text-center"
-						placeholder="Escribe tu Celular"
-					/>
-					<div class="">
-						<select
-							class="w-full h-12 outline-none bg-slate-200 rounded-xl text-center"
-						>
-							<option class="w-4" value="internet"
-								>Internet</option
-							>
-							<option value="internet_cable" class="">Cable TV</option>
-							<option value="cable">Internet + cable</option> px-4
-							<option value="cámaras">Cámaras</option>
-						</select>
-					</div>
-				</div>
-				<div class="flex justify-center my-4">
-					<button
-						class="bg-fourth px-16 py-2 rounded-full text-white"
-					>
-						Enviar</button
-					>
-				</div>
-			</div>
-		</div> -->
+		<h2 class="text-xl mb-8 text-center">
+			Dejanos tu información y te Contactaremos.
+		</h2>
 
-		<div>
-			<Benefits />
-			<Plans />
-			<Service />
-			<Location />
-			<Terms />
-			<Footer />
-		</div>
-
-		<style></style>
 	</main>
+
+	<div>
+		<Benefits />
+		<Plans />
+		<Service />
+		<Location />
+		<Terms />
+		<Footer />
+	</div>
+	 <BottomWhatsapp></BottomWhatsapp>
+	<style></style>
 </Layout>
