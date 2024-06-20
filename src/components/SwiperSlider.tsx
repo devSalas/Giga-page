@@ -13,10 +13,11 @@ function Slider({ price, megasBefore, megasNow }: Props) {
             <p className='text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth'>s/{price}.00</p>
             <p className='mb-8'>X MES</p>
 
-            <div>
-                <button className='bg-secondary px-4 py-2 rounded-full text-white '>
+            <div className="mb-4">
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51983422178" className='bg-secondary px-4 py-3  rounded-full text-white '>
                     SOLICITAR AHORA
-                </button>
+                </a>
             </div>
 
         </div>
