@@ -10,7 +10,7 @@ import { dataPlans } from '../data';
 // Instalar módulos necesarios de Swiper
 SwiperCore.use([Pagination, Navigation]);
 
-const SwiperSlider = () => {
+const SwiperSliderHero = () => {
   return (
 
     <Swiper
@@ -30,29 +30,40 @@ const SwiperSlider = () => {
         },
         // when window width is >= 768px
         600: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 20,
         },
         // when window width is >= 1024px
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 50,
         },
       }}
-      className="mySwiper "
+      className="mySwiper"
 
     >
-      {
-        dataPlans.map(({ megasBefore, megasNow, price },index) => <SwiperSlide className='' key={index}>
-          <Slider megasBefore={megasBefore} megasNow={megasNow} price={price} />
-          <div className="custom-scrollbar1 mb-8"></div>
-        </SwiperSlide>)
-      }
-
+      <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
+        <div className='h-[600px]'>
+          <h1 className='text-7xl'>Primer Slider</h1>
+        </div>
+        <div className="custom-scrollbar mb-8"></div>
+      </SwiperSlide>
+      <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
+        <div className='h-[600px]'>
+          <h1 className='text-7xl'>Segundo Slider</h1>
+        </div>
+        <div className="custom-scrollbar mb-8"></div>
+      </SwiperSlide>
+      <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
+        <div className='h-[600px]'>
+          <h1 className='text-7xl'>Tercer Slider</h1>
+        </div>
+        <div className="custom-scrollbar mb-8"></div>
+      </SwiperSlide>
 
     </Swiper >
   )
 
 };
 
-export default SwiperSlider;
+export default SwiperSliderHero;

@@ -7,6 +7,8 @@ import Location from "../components/section/Location.astro";
 import Terms from "../components/section/Terms.astro";
 import Footer from "../components/section/Footer.astro";
 import BottomWhatsapp from "../components/BottomWhatsapp.astro";
+import SwiperSliderHero  from "../components/SwiperSlidersHero";
+import Form from "../components/Form"
 ---
 
 <Layout title="Gigamas,el internet que te da mas.">
@@ -25,7 +27,9 @@ import BottomWhatsapp from "../components/BottomWhatsapp.astro";
 				class="hidden w-full md:flex justify-between items-center max-w-7xl m-auto"
 			>
 				<figure>
-					<img src="gigamas_logo.png" alt="" />
+					<a href="/">
+						<img src="gigamas_logo.png" alt="" />
+					</a>
 				</figure>
 				<nav class="flex gap-8">
 					<a href="#planes">Planes</a>
@@ -48,41 +52,12 @@ import BottomWhatsapp from "../components/BottomWhatsapp.astro";
 		</div>
 		<!-- slider -->
 		<div class="w-full bg-secondary">
-			<img src="bg_prueba.webp" alt="" />
+			<!-- <img src="bg_prueba.webp" alt="" /> -->
+			<SwiperSliderHero client:load/>
 		</div>
 		<!-- form  -->
-		<div class="w-full bg-form p-4 py-16 mb-16">
-			<h2 class="mb-8 text-center text-3xl font-bold">
-				<span class="text-csecondary">Dejanos Tu Información,</span>
-				<br /><span class="text-cprimary"> te Contactaremos.</span>
-			</h2>
-			<div class="flex gap-4 flex-wrap justify-center mb-8">
-				<input
-					type="text"
-					class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4"
-					placeholder="nombre"
-				/>
-				<input
-					type="text"
-					class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4"
-					placeholder="telefono"
-				/>
-				<select class="w-36 h-8 md:w-56 md:h-12 rounded-full px-4">
-					<option value="internet">Internet</option>
-					<option value="internet_cable">Cable TV</option>
-					<option value="cable">Internet + cable</option> px-4
-					<option value="cámaras">Cámaras</option>
-				</select>
-			</div>
-			<div class="flex justify-center my-4">
-				<button
-					class="bg-secondary px-16 py-2 md:w-56 md:h-12 rounded-full text-white"
-				>
-					Enviar</button
-				>
-			</div>
-		</div>
-
+		<Form client:load/>
+		
 
 
 	</main>

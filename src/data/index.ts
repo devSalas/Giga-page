@@ -30,17 +30,17 @@ export const dataPlans = [
     {
         megasBefore: 50,
         megasNow: 100,
-        price: 50,
+        price: 60,
     },
     {
         megasBefore: 70,
         megasNow: 140,
-        price: 50,
+        price: 80,
     },
     {
         megasBefore: 100,
         megasNow: 200,
-        price: 50,
+        price: 99.0,
     },
 ]
 
