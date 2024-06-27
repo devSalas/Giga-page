@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div
+            class="w-full h-screen flex flex-col gap-4 justify-center items-center"
+        >
+            <h1>INICIA SESIÓN PARA DESCARGAR EL EXCEL</h1>
+            <form
+                id="form"
+                action=""
+                class="flex flex-col gap-8 border-2 p-4 rounded-xl"
+            >
+                <label for="" class="flex flex-col gap-4">
+                    <div class="text-start">Nombre</div>
+                    <input
+                        type="text"
+                        name="name"
+                        class="h-12 w-64 rounded-xl border-2 p-2"
+                    />
+                </label>
+                <label for="" class="flex flex-col gap-4">
+                    <div class="text-start">Contraseña</div>
+
+                    <input
+                        type="text"
+                        name="password"
+                        class="h-12 w-64 rounded-xl border-2 p-2"
+                    />
+                </label>
+
+                <button
+                    type="submit"
+                    class="w-full bg-secondary p-2 rounded-xl text-white"
+                >
+                    OBTENER EXCEL
+                </button>
+            </form>
+        </div>
+    </body>
+
+    <script>
+        let form = document.querySelector("form");
+
+        form?.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let name = form.name.value;
+            let password = form.password.value;
+
+            const data = {
+                name,
+                password,
+            };
+            console.log(name, password);
+
+            async function getData() {
+                try {
+                    const res = await fetch(
+                        "http://localhost/downloadexcel/download.php",
+                        {
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            method: "POST",
+                            body: JSON.stringify(data),
+                        },
+                    );
+
+                    if (!res.ok) {
+                        const errorResponse = await res.json();
+                        throw new Error(`Error: ${errorResponse.error}`);
+                    }
+
+                    const blob = await res.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.style.display = "none";
+                    a.href = url;
+                    a.download = "datos.xlsx";
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+
+                    const result = await res.json();
+                    console.log(result);
+
+
+                } catch (error) {
+                    console.error("Error al obtener los datos:", error);
+                }
+            }
+
+            getData();
+        });
+    </script>
+</html>

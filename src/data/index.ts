@@ -10,7 +10,7 @@ export const dataBenefits = [
         text: "Estamos aquí para ti. Nuestro equipo de soporte está listo para ayudarte con cualquier consulta o problema de manera rápida y eficiente.",
     },
     {
-        img: "performance.png",
+        img: "router.png",
         title: "Conexión Estable",
         text: "Disfruta de Olvídate de las caídas y fluctuaciones. Te garantizamos una conexión constante y fiable para todas tus actividades en línea.",
     },

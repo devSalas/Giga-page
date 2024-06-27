@@ -62,8 +62,8 @@ const { social_media } = dataFooter;
             <h2 class="text-cprimary text-center font-bold mb-6 text-2xl">
                 Contactos
             </h2>
-            <div class="text-center font-bold">
-                <sub >Click y copiado.</sub>
+            <div id="tooltip" class="hidden text-center font-bold text-white  ">
+                <sub class="bg-white text-secondary p-2 px-6 rounded-md transition-all duration-300 ease-in-out">Copiado.</sub>
             </div>
 
             <p
@@ -73,16 +73,17 @@ const { social_media } = dataFooter;
                 <img class="" src="copy.svg" alt="" /> 983 422 178
             </p>
             <p
-            id="email"
-            class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
-        >
-            <img class="" src="copy.svg" alt="" />977 876 630 
-        </p>
+                id="email"
+                class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
+            >
+                <img class="" src="copy.svg" alt="" />977 876 630
+            </p>
             <p
                 id="phone2"
-                class="bg-white/70 text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
+                class="relative bg-white/70 text-black/70 font-bold px-6 py-3 rounded-md flex gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
             >
-                <img class="" src="copy.svg" alt="" />922 544 930 
+               
+                <img class="" src="copy.svg" alt="" />922 544 930
             </p>
         </div>
 
@@ -91,7 +92,11 @@ const { social_media } = dataFooter;
             let phone = document.getElementById("phone");
             let phone2 = document.getElementById("phone2");
 
-            email?.addEventListener("click",copiarTexto);
+            let tooltip = document.getElementById("tooltip");
+
+
+
+            email?.addEventListener("click", copiarTexto);
             phone?.addEventListener("click", copiarTexto);
             phone2?.addEventListener("click", copiarTexto);
 
@@ -107,7 +112,10 @@ const { social_media } = dataFooter;
                     navigator.clipboard.writeText(texto).then(
                         function () {
                             // Éxito
-                            console.log(`Texto copiado: ${texto}`);
+                            tooltip!.classList.remove("hidden")
+                            setTimeout(()=>{
+                                tooltip!.classList.add("hidden")
+                            },1000)
                         },
                         function (err) {
                             console.error(
