@@ -1,8 +1,9 @@
 ---
 import SwiperSliderCanales from "../SwiperSliderCanales";
+import  {dataServices} from "../../data/index"
 ---
 
-<div class="py-8 px-5 max-w-7xl m-auto mb-16">
+<div class="py-8 px-5 max-w-7xl m-auto mb-16 " id="servicios">
     <h4 class="text-xs text-center mb-2 text-sixth/70 font-extrabold">
         SERVICICIOS
     </h4>
@@ -21,26 +22,22 @@ import SwiperSliderCanales from "../SwiperSliderCanales";
                 <h3
                     class="text-2xl sm:text-start font-medium mb-8 lg:text-4xl lg:max-w-sm"
                 >
-                    Disfruta De Las Mejores Series Con Cable
+                    {dataServices.cable.title}
                 </h3>
                 <p class="mb-8 max-w-md">
-                    Conéctate con nuestra fibra óptica y disfruta de internet
-                    ultrarrápido y cable de alta calidad. Navega, haz streaming
-                    y juega en línea sin interrupciones, mientras disfrutas de
-                    tus canales favoritos. ¡Transforma tu hogar en un centro de
-                    entretenimiento hoy mismo!
+                   {dataServices.cable.description}
                 </p>
                 <div class="hidden sm:block">
                     <a
                         target="_blank"
                         href="https://api.whatsapp.com/send?phone=51983422178"
-                        class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white"
+                        class="inline-block text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white transition-all hover:scale-105 duration-100" 
                         >SOLICITAR AHORA
                     </a>
                 </div>
             </div>
             <img
-                src="family_alegre.jpg"
+                src={dataServices.cable.image}
                 alt=""
                 class="w-full max-w-xl rounded-lg"
             />
@@ -103,7 +100,7 @@ import SwiperSliderCanales from "../SwiperSliderCanales";
                 </div>
             </div>
             <img
-                src="test-camaras.jpg"
+                src="./imgs/test-camaras.jpg"
                 alt=""
                 class="w-full max-w-xl rounded-lg"
             />

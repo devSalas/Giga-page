@@ -4,11 +4,12 @@ export default function Form() {
 
     const [showModal, setShowModal] = useState(false)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        const name = e.target.name.value
-        const tel = e.target.tel.value
-        const service = e.target.service.value
+        const form = e.currentTarget;
+        const name = (form.elements.namedItem('Name') as HTMLInputElement)?.value;
+        const tel = (form.elements.namedItem('tel') as HTMLInputElement)?.value;
+        const service = (form.elements.namedItem('service') as HTMLInputElement)?.value;
 
         const data = {
             name,
@@ -40,12 +41,42 @@ export default function Form() {
             }finally{
                 setTimeout(()=>{
                     setShowModal(false)
-                },5000)
+                },5000);
+
+                form.Name.value = "";
+                form.tel.value = "";
+                form.service.value = ""
+
+
             }
         }
 
         getData();
+        sendGmail()
 
+        async function sendGmail() {
+
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/esalassulca@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert('Message sent successfully!');
+                } else {
+                    alert('Failed to send message.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error sending message.');
+            }
+
+        }
 
 
     }
@@ -55,17 +86,17 @@ export default function Form() {
 
     return (
 
-        <form onSubmit={handleSubmit} className="w-full bg-form p-4 py-16 mb-16">
+        <form onSubmit={handleSubmit} className="w-full bg-form p-4 py-8 mb-16">
             <h2 className="mb-8 text-center text-3xl font-bold">
-                <span className="text-csecondary">Dejanos Tu Información,</span>
-                <br /><span className="text-cprimary"> te Contactaremos.</span>
+                <span className="text-csecondary">Registrate, </span>
+                <span className="text-cprimary">Te Contactaremos.</span>
             </h2>
             <div className="flex gap-4 flex-wrap justify-center mb-8">
                 <input
                     type="text"
                     className="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4"
                     placeholder="nombre"
-                    name="name"
+                    name="Name"
                     pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{1,60}" title="Ingresa un nombre válido (máximo 60 caracteres)." required
                 />
                 <input
@@ -85,13 +116,13 @@ export default function Form() {
             <div className="flex justify-center my-4">
                 <button
                     type="submit"
-                    className="bg-secondary px-16 py-2 md:w-56 md:h-12 rounded-full text-white"
+                    className="bg-secondary px-16 py-2 md:w-56 md:h-12 font-bold rounded-full text-white transition-all hover:scale-105 duration-100"
                 >
                     Enviar
                 </button>
             </div>
 
-            {showModal && <p className=" text-white text-center py-4"> Perfecto, en un momento nos comunicaremos contigo.</p>}
+            { showModal && <p className=" text-white text-center py-4  "> <span className="bg-secondary/80 p-4 px-8 rounded-2xl">Perfecto, en un momento nos comunicaremos contigo, gracias.</span></p>}
         </form>
 
     )

@@ -1,56 +1,35 @@
-<!doctype html>
+
+
+    <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div
-            class="w-full h-screen flex flex-col gap-4 justify-center items-center"
-        >
-            <h1>INICIA SESIÓN PARA DESCARGAR EL EXCEL</h1>
-            <form
-                id="form"
-                action=""
-                class="flex flex-col gap-8 border-2 p-4 rounded-xl"
-            >
-                <label for="" class="flex flex-col gap-4">
-                    <div class="text-start">Nombre</div>
-                    <input
-                        type="text"
-                        name="name"
-                        class="h-12 w-64 rounded-xl border-2 p-2"
-                    />
-                </label>
-                <label for="" class="flex flex-col gap-4">
-                    <div class="text-start">Contraseña</div>
-
-                    <input
-                        type="text"
-                        name="password"
-                        class="h-12 w-64 rounded-xl border-2 p-2"
-                    />
-                </label>
-
-                <button
-                    type="submit"
-                    class="w-full bg-secondary p-2 rounded-xl text-white"
-                >
-                    OBTENER EXCEL
-                </button>
-            </form>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="w-full h-screen flex flex-col justify-center items-center">
+    <figure>
+        <img src="gigamas_logo.png" alt="">
+    </figure>
+    <form id="myForm" class="p-4 flex flex-col gap-8">
+        <input type="text" name="name" placeholder="Name" required class="h-12 w-64 outline-none border-2  px-4 rounded-md"/>
+        <input type="password" name="password" placeholder="Password" required class="h-12 w-64 outline-none border-2  px-4 rounded-md"/>
+        <button id="btnSend" type="submit" class="h-12 w-64 bg-secondary rounded-md text-white hover:scale-105 transition-all duration-100">Descargar</button>
+    </form>
 
     <script>
-        let form = document.querySelector("form");
+        const form = document.querySelector<HTMLFormElement>("#myForm");
+        const btnSend = document.getElementById("btnSend") as HTMLButtonElement;
 
-        form?.addEventListener("submit", (e) => {
+        form?.addEventListener("submit", (e: Event) => {
             e.preventDefault();
+            btnSend!.textContent = "descargando..."
+            const formElements = e.currentTarget as HTMLFormElement;
+            const inputName = (formElements.elements.namedItem("name") as HTMLInputElement)
+            const name = inputName?.value
 
-            let name = form.name.value;
-            let password = form.password.value;
+            const InputPassword = (formElements.elements.namedItem("password") as HTMLInputElement)
+            const password = InputPassword?.value;
 
             const data = {
                 name,
@@ -60,22 +39,21 @@
 
             async function getData() {
                 try {
-                    const res = await fetch(
-                        "http://localhost/downloadexcel/download.php",
-                        {
-                            headers: {
-                                "Content-Type": "application/json",
-                            },
-                            method: "POST",
-                            body: JSON.stringify(data),
+                    const res = await fetch("https://gigamas.com.pe/downloadexcel/download.php", {
+                        headers: {
+                            "Content-Type": "application/json",
                         },
-                    );
+                        method: "POST",
+                        body: JSON.stringify(data),
+                    });
 
                     if (!res.ok) {
+                  
+                        btnSend!.textContent = "Incorrecto"
                         const errorResponse = await res.json();
                         throw new Error(`Error: ${errorResponse.error}`);
                     }
-
+                    btnSend!.textContent = "Descargado"
                     const blob = await res.blob();
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement("a");
@@ -86,16 +64,24 @@
                     a.click();
                     window.URL.revokeObjectURL(url);
 
-                    const result = await res.json();
-                    console.log(result);
-
 
                 } catch (error) {
+                    btnSend!.textContent = "Ocurrio un error"
+                
                     console.error("Error al obtener los datos:", error);
+                }finally{
+                    setTimeout(()=>{
+                        btnSend!.textContent = "descargar"
+                    },2000)
+                    
                 }
             }
 
             getData();
         });
     </script>
+</body>
+</html>
+
+
 </html>

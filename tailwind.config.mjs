@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage:{
-				"form":"linear-gradient(to bottom, #072b89, #00256f, #001e55, #00163b, #020b23);"
+				"form":"linear-gradient(to bottom, #072b89, #00256f, #001e55, #00163b, #020b23);",
+				'hero-map': "url('/imgs/hero-pattern.svg')",
 			},
 			colors:{
 				"primary":"#FFFFFF",

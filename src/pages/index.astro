@@ -9,6 +9,7 @@ import Footer from "../components/section/Footer.astro";
 import BottomWhatsapp from "../components/BottomWhatsapp.astro";
 import SwiperSliderHero  from "../components/SwiperSlidersHero";
 import Form from "../components/Form"
+import NavbarMobile from "../components/NavbarMobile.astro";
 ---
 
 <Layout title="Gigamas,el internet que te da mas.">
@@ -21,40 +22,35 @@ import Form from "../components/Form"
 			</div>
 		</div> -->
 		<!-- header -->
-		<div class="mb-4">
+		<div class="py-2 md:py-8">
 			<!-- desktop -->
 			<div
 				class="hidden w-full md:flex justify-between items-center max-w-7xl m-auto"
 			>
 				<figure>
 					<a href="/">
-						<img src="gigamas_logo.png" alt="" />
+						<img src="./imgs/gigamas_logo.png" alt="" class="w-32" />
 					</a>
 				</figure>
 				<nav class="flex gap-8">
-					<a href="#planes">Planes</a>
-					<a href="#contacto">Contacto</a>
+					<a href="#planes" class="font-regular transition-all hover:scale-105 duration-100">Planes</a>
+					<a href="#contacto" class="font-regular transition-all hover:scale-105 duration-100">Contacto</a>
+					<a href="#servicios" class="font-regular transition-all hover:scale-105 duration-100">Servicios</a>
+
 				</nav>
 				<a target="_blank"
-				href="https://api.whatsapp.com/send?phone=51983422178" class="bg-fourth p-2 px-8 py-3 font-bold text-cprimary rounded-full">
+				href="https://api.whatsapp.com/send?phone=51983422178" class="bg-fourth p-2 px-8 py-3 font-bold text-cprimary rounded-full transition-all hover:scale-105 duration-100">
 					CONTACTAR AHORA
 				</a>
 			</div>
 			<!-- Mobile -->
-			<div
-				class="w-full h-16 p-4 flex justify-between items-center md:hidden"
-			>
-				<strong> GIGAMAS</strong>
-				<figure>
-					<img src="menu.svg" alt="" />
-				</figure>
-			</div>
+			<NavbarMobile/>
 		</div>
 		<!-- slider -->
-		<div class="w-full bg-secondary">
+		<div class="w-full   ">
 			<!-- <img src="bg_prueba.webp" alt="" /> -->
 			<!-- <SwiperSliderHero client:load/> -->
-			<section class="sowertec-section">
+			<section class="sowertec-section  bg-secondary ">
 
 				<!-- <div class="sowertec-crea sowertec-crea-home">
 		  
@@ -79,7 +75,7 @@ import Form from "../components/Form"
 					</div>
 		  
 				</div> -->
-				<img src="./hero.png" alt="">
+				<img src="./imgs/banner_fiesta_patrias.webp" class="object-cover lg:w-full h-[397px] lg:h-auto sm:object-cover sm:h-auto " alt="">
 			</section>
 		</div>
 		<!-- form  -->

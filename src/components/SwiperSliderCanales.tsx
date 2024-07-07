@@ -49,23 +49,23 @@ const SwiperSliderCanales = () => {
         >
 
             <SwiperSlide style={{display:"flex"}} className='w-full h-full flex justify-center items-center'>
-                <img src="canales/espa.png" alt="" className=' sm:h-[94px] m-auto'/>
+                <img src="./imgs/canales/espa.png" alt="" className=' sm:h-[94px] m-auto'/>
                {/*  <div className="custom-scrollbar mb-8"></div> */}
             </SwiperSlide>
             <SwiperSlide  style={{display:"flex"}} className=''>
-            <img src="canales/National_Geographic_Channel.png" alt="" className='h-[94x] m-auto'/>
+            <img src="./imgs/canales/National_Geographic_Channel.png" alt="" className='h-[94x] m-auto'/>
 
             </SwiperSlide>
             <SwiperSlide  style={{display:"flex"}} className='h-full flex justify-center items-center'>
-            <img src="canales/disney_junior.png" alt="" className='h-[94px]  m-auto' />
+            <img src="./imgs/canales/disney_junior.png" alt="" className='h-[94px]  m-auto' />
 
             </SwiperSlide>
             <SwiperSlide  style={{display:"flex"}} className='h-full flex justify-center items-center'>
-            <img src="canales/fox.png" alt="" className='h-[94px]  m-auto' />
+            <img src="./imgs/canales/fox.png" alt="" className='h-[94px]  m-auto' />
 
             </SwiperSlide>
             <SwiperSlide  style={{display:"flex"}} className='h-full flex justify-center items-center'>
-            <img src="canales/cartoon_network.png" alt="" className='h-[94px]  m-auto' />
+            <img src="./imgs/canales/cartoon_network.png" alt="" className='h-[94px]  m-auto' />
             </SwiperSlide>
             <div className='custom-scrollbar-canal'>
 
