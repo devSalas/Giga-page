@@ -43,7 +43,7 @@ const SwiperSlider = () => {
 
     >
       {
-        dataPlans.map(({ megasBefore, megasNow, price },index) => <SwiperSlide className='' key={index}>
+        dataPlans.map(({ megasBefore, megasNow, price },index) => <SwiperSlide className='' key={index+price}>
           <Slider megasBefore={megasBefore} megasNow={megasNow} price={price} />
           <div className="custom-scrollbar1 mb-8"></div>
         </SwiperSlide>)

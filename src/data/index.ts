@@ -1,3 +1,15 @@
+export const dataBanner = [
+    {
+        img:"imgs/banner/banner_1_gigamas.webp"
+    },
+    {
+        img:"imgs/banner/banner_2_gigamas.webp"
+    },
+    {
+        img:"imgs/banner/banner_3_gigamas.webp"
+    },
+]
+
 export const dataBenefits = [
     {
         img: "./imgs/performance.png",
@@ -71,6 +83,9 @@ export const dataFooter = {
             img: "./imgs/icon/tiktok.svg",
             link: "https://www.tiktok.com/@gigamas.pe"
         }
+    },
+    logo:{
+        img:"./imgs/gigamas_logo.jpg"
     }
 
 

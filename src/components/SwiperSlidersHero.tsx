@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 import SwiperCore from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import Slider from './SwiperSlider'
-import { dataPlans } from '../data';
+import { dataBanner, dataPlans } from '../data';
 
 // Instalar módulos necesarios de Swiper
 SwiperCore.use([Pagination, Navigation]);
@@ -42,11 +42,8 @@ const SwiperSliderHero = () => {
       className="mySwiper"
 
     >
-      <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
-        <div className='h-[600px]'>
-          <h1 className='text-7xl'>Primer Slider</h1>
-        </div>
-        <div className="custom-scrollbar mb-8"></div>
+{/*       <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
+        <img src='imgs/banner/banner_1_gigamas.webp' />
       </SwiperSlide>
       <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
         <div className='h-[600px]'>
@@ -59,7 +56,15 @@ const SwiperSliderHero = () => {
           <h1 className='text-7xl'>Tercer Slider</h1>
         </div>
         <div className="custom-scrollbar mb-8"></div>
-      </SwiperSlide>
+      </SwiperSlide> */}
+
+      {
+        dataBanner.map((banner,index) => (
+          <SwiperSlide style={{ display: "flex" }} className='w-full  flex justify-center items-center ' key={banner.img+index}>
+            <img src={banner.img} className='select-none object-cover lg:w-full h-[397px] lg:h-auto sm:object-cover sm:h-auto'/>
+          </SwiperSlide>
+        ))
+      }
 
     </Swiper >
   )
