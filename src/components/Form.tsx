@@ -22,7 +22,7 @@ export default function Form() {
 
         async function getData() {
             try {
-                const res = await fetch("https://gigamas.com.pe/downloadexcel/index.php", {
+                const res = await fetch("http://localhost/downloadexcel/index.php", {
                     headers: {
                         "Content-Type": "application/json"
                     },
@@ -114,7 +114,7 @@ export default function Form() {
                     <option value="">Elegir servicio</option>
                     <option value="internet">Internet</option>
                     <option value="cable">Cable TV</option>
-                    <option value="internet_cable">Internet + cable</option> px-4
+                    <option value="internet y cable">Internet + cable</option> px-4
                     <option value="cámaras">Cámaras</option>
                 </select>
             </div>

@@ -42,32 +42,24 @@ const SwiperSliderHero = () => {
       className="mySwiper"
 
     >
-{/*       <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
-        <img src='imgs/banner/banner_1_gigamas.webp' />
-      </SwiperSlide>
-      <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
-        <div className='h-[600px]'>
-          <h1 className='text-7xl'>Segundo Slider</h1>
-        </div>
-        <div className="custom-scrollbar mb-8"></div>
-      </SwiperSlide>
-      <SwiperSlide style={{ display: "flex" }} className='w-full h-full flex justify-center items-center'>
-        <div className='h-[600px]'>
-          <h1 className='text-7xl'>Tercer Slider</h1>
-        </div>
-        <div className="custom-scrollbar mb-8"></div>
-      </SwiperSlide> */}
+
 
       {
-        dataBanner.map((banner,index) => (
-          <SwiperSlide style={{ display: "flex" }} className='w-full  flex justify-center items-center ' key={banner.img+index}>
-            <img src={banner.img} className='select-none object-cover lg:w-full h-[397px] lg:h-auto sm:object-cover sm:h-auto'/>
-          </SwiperSlide>
-        ))
+        dataBanner.map((banner, index) => (
+          <SwiperSlide style={{ display: "flex" }} className='w-full  flex justify-center items-center ' key={banner.img + index}>
+
+           
+            <picture className='w-full'>
+              <source srcSet={banner.img_mobile} media="(max-width: 767px)" />
+              <source srcSet={banner.img} media="(min-width: 768px)" />
+              <img src={banner.img} className='select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto' />
+            </picture>
+
+
+          </SwiperSlide>))
       }
 
-    </Swiper >
-  )
+    </Swiper >)
 
 };
 

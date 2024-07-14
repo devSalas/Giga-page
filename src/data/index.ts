@@ -1,12 +1,15 @@
 export const dataBanner = [
     {
-        img:"imgs/banner/banner_1_gigamas.webp"
+        img:"imgs/banner/banner_1_gigamas.webp",
+        img_mobile:"imgs/banner/banner_1_gigamas_m.webp"
     },
     {
-        img:"imgs/banner/banner_2_gigamas.webp"
+        img:"imgs/banner/banner_2_gigamas.webp",
+        img_mobile:"imgs/banner/banner_2_gigamas_m.webp"
     },
     {
-        img:"imgs/banner/banner_3_gigamas.webp"
+        img:"imgs/banner/banner_3_gigamas.webp",
+        img_mobile:"imgs/banner/banner_3_gigamas_m.webp"
     },
 ]
 
