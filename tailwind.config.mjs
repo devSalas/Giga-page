@@ -6,6 +6,7 @@ export default {
 			backgroundImage:{
 				"form":"linear-gradient(to bottom, #072b89, #00256f, #001e55, #00163b, #020b23);",
 				'hero-map': "url('/imgs/hero-pattern.svg')",
+				'service-gradient':"linear-gradient(to right top, #0566f8, #a248dd, #dc12b2, #fa007e, #ff0049);"
 			},
 			colors:{
 				"primary":"#FFFFFF",

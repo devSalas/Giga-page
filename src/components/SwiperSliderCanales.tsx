@@ -65,7 +65,7 @@ const SwiperSliderCanales = () => {
 
             </SwiperSlide>
             <SwiperSlide  style={{display:"flex"}} className='h-full flex justify-center items-center'>
-            <img src="./imgs/canales/cartoon_network.png" alt="" className='h-[94px]  m-auto' />
+            <img src="./imgs/canales/star_channel.png" alt="" className='h-[94px]  m-auto' />
             </SwiperSlide>
             <div className='custom-scrollbar-canal'>
 

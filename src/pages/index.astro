@@ -33,9 +33,9 @@ import NavbarMobile from "../components/NavbarMobile.astro";
 					</a>
 				</figure>
 				<nav class="flex gap-8">
-					<a href="#planes" class="font-regular transition-all hover:scale-105 duration-100">Planes</a>
-					<a href="#contacto" class="font-regular transition-all hover:scale-105 duration-100">Contacto</a>
-					<a href="#servicios" class="font-regular transition-all hover:scale-105 duration-100">Servicios</a>
+					<a href="#planes" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold  hover:md:text-secondary">Planes</a>
+					<a href="#contacto" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Contacto</a>
+					<a href="#servicios" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Servicios</a>
 
 				</nav>
 				<a target="_blank"
@@ -65,7 +65,9 @@ import NavbarMobile from "../components/NavbarMobile.astro";
 	<div>
 		<Benefits />
 		<Plans />
-		<Service />
+		<div class="w-full bg-blue-100 shadow-sm py-32 mb-32">
+			<Service />
+		</div>
 		<Location />
 		<Terms />
 		<Footer />

@@ -11,6 +11,10 @@ export const dataBanner = [
         img:"imgs/banner/banner_3_gigamas.webp",
         img_mobile:"imgs/banner/banner_3_gigamas_m.webp"
     },
+    {
+        img:"imgs/banner/banner_4_gigamas.webp",
+        img_mobile:"imgs/banner/banner_4_gigamas_m.webp"
+    },
 ]
 
 export const dataBenefits = [
