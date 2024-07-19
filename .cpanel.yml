@@ -1,7 +1,7 @@
 deployment:
   tasks:
     - echo "Starting Deployment"
-    - export DEPLOYPATH=/home/gigamasc/public_html/prueba/
+    - export DEPLOYPATH=/home/gigamasc/public_html/gigamas/
     - /bin/cp -R dist $DEPLOYPATH
     - cd $DEPLOYPATH
     - echo "Deployment Finished"
