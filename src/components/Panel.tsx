@@ -19,7 +19,7 @@ export function PanelMain() {
     function verifyCredentials(username: string, password: string) {
         async function getData() {
             try {
-                const res = await fetch("http://localhost/downloadexcel/sendData.php", {
+                const res = await fetch("https://gigamas.com.pe/downloadexcel/sendData.php", {
                     headers: {
                         "Content-Type": "application/json"
                     },

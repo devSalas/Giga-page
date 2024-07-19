@@ -22,7 +22,7 @@ export default function Form() {
 
         async function getData() {
             try {
-                const res = await fetch("http://localhost/downloadexcel/index.php", {
+                const res = await fetch("https://gigamas.com.pe/downloadexcel/index.php", {
                     headers: {
                         "Content-Type": "application/json"
                     },

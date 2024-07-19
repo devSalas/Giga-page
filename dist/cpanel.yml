@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - echo "Starting Deployment"
-    - export DEPLOYPATH=/home/gigamasc/public_html/repositories/Giga-page/dist/
+    - export DEPLOYPATH=/home/gigamasc/public_html/repositories/
     - /bin/cp -R * $DEPLOYPATH/
     - cd $DEPLOYPATH
     - mv dist/* .
