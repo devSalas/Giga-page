@@ -1,83 +1,463 @@
-<!DOCTYPE html><html lang="en" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/png" href="imgs/favicon_gigamas.png"><meta name="generator" content="Astro v4.9.2"><title>Gigamas,el internet que te da mas.</title><link rel="stylesheet" href="/_astro/descargar.CPStXUp1.css">
-<style>:root{margin:0;box-sizing:border-box}body{width:100%}code{font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace}
-</style>
-<link rel="stylesheet" href="/_astro/index.Bgl5Uj5h.css"><script type="module">const a=document.querySelectorAll(".term_title");document.querySelectorAll(".term_description");document.querySelector(".arrow_down");document.querySelector(".arrow_up");a.forEach(e=>{e?.addEventListener("click",t=>{e.nextElementSibling?.classList.toggle("hidden");const o=e.children[1].children[0],r=e.children[1].children[1];o.classList.toggle("hidden"),r.classList.toggle("hidden")})});let m=document.getElementById("email"),g=document.getElementById("phone"),E=document.getElementById("phone2"),d=document.getElementById("tooltip");m?.addEventListener("click",l);g?.addEventListener("click",l);E?.addEventListener("click",l);function l(e){const t=e.currentTarget;if(t&&t.textContent){const c=t.dataset.number||"";navigator.clipboard.writeText(c).then(function(){d.classList.remove("hidden"),setTimeout(()=>{d.classList.add("hidden")},1e3)},function(o){console.error("Error al copiar al portapapeles: ",o)})}else console.error("El elemento objetivo no tiene contenido de texto.")}const u=document.getElementById("btn-w"),i=document.getElementById("icon-wp"),s=document.getElementById("icon-close"),h=document.getElementById("ws");console.log(i,s);u.addEventListener("click",e=>{h.classList.toggle("hidden"),i.classList.toggle("hidden"),s.classList.toggle("hidden")});const p=document.getElementById("btnOpenModal"),n=document.getElementById("navbarMobile");p?.addEventListener("click",()=>{n?.classList.toggle("hidden")});const L=document.getElementById("closeModal"),y=n?.querySelectorAll("a");y?.forEach(e=>{e.addEventListener("click",()=>{n?.classList.add("hidden")})});L?.addEventListener("click",()=>{n?.classList.add("hidden")});
-</script></head> <body>  <main class=""> <!-- type bussines --> <!-- <div class="w-full flex justify-end max-w-7xl m-auto">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Astro description">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="imgs/favicon_gigamas.png">
+    <meta name="generator" content="Astro v4.9.2">
+    <title>Gigamas,el internet que te da mas.</title>
+    <link rel="stylesheet" href="/_astro/descargar.CPStXUp1.css">
+    <style>
+        :root {
+            margin: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            width: 100%
+        }
+
+        code {
+            font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace
+        }
+    </style>
+    <link rel="stylesheet" href="/_astro/index.Bgl5Uj5h.css">
+    <script type="module">const a = document.querySelectorAll(".term_title"); document.querySelectorAll(".term_description"); document.querySelector(".arrow_down"); document.querySelector(".arrow_up"); a.forEach(e => { e?.addEventListener("click", t => { e.nextElementSibling?.classList.toggle("hidden"); const o = e.children[1].children[0], r = e.children[1].children[1]; o.classList.toggle("hidden"), r.classList.toggle("hidden") }) }); let m = document.getElementById("email"), g = document.getElementById("phone"), E = document.getElementById("phone2"), d = document.getElementById("tooltip"); m?.addEventListener("click", l); g?.addEventListener("click", l); E?.addEventListener("click", l); function l(e) { const t = e.currentTarget; if (t && t.textContent) { const c = t.dataset.number || ""; navigator.clipboard.writeText(c).then(function () { d.classList.remove("hidden"), setTimeout(() => { d.classList.add("hidden") }, 1e3) }, function (o) { console.error("Error al copiar al portapapeles: ", o) }) } else console.error("El elemento objetivo no tiene contenido de texto.") } const u = document.getElementById("btn-w"), i = document.getElementById("icon-wp"), s = document.getElementById("icon-close"), h = document.getElementById("ws"); console.log(i, s); u.addEventListener("click", e => { h.classList.toggle("hidden"), i.classList.toggle("hidden"), s.classList.toggle("hidden") }); const p = document.getElementById("btnOpenModal"), n = document.getElementById("navbarMobile"); p?.addEventListener("click", () => { n?.classList.toggle("hidden") }); const L = document.getElementById("closeModal"), y = n?.querySelectorAll("a"); y?.forEach(e => { e.addEventListener("click", () => { n?.classList.add("hidden") }) }); L?.addEventListener("click", () => { n?.classList.add("hidden") });
+    </script>
+</head>
+
+<body>
+    <main class=""> <!-- type bussines --> <!-- <div class="w-full flex justify-end max-w-7xl m-auto">
 			<div class="rounded-b-lg overflow-hidden flex">
 				<a href="" class="inline-block bg-fourth px-6 py-1 text-cprimary">Hogar</a>
 				<a href="" class="px-4 py-1 text-black bg-slate-100">Corporación</a>
 			</div>
-		</div> --> <!-- header --> <div class="py-2 md:py-8"> <!-- desktop --> <div class="hidden w-full md:flex justify-between items-center max-w-7xl m-auto"> <figure> <a href="/"> <img src="./imgs/gigamas_logo.png" alt="" class="w-32"> </a> </figure> <nav class="flex gap-8"> <a href="#planes" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold  hover:md:text-secondary">Planes</a> <a href="#contacto" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Contacto</a> <a href="#servicios" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Servicios</a> </nav> <a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="bg-fourth p-2 px-8 py-3 font-bold text-cprimary rounded-full transition-all hover:scale-105 duration-100">
-CONTACTAR AHORA
-</a> </div> <!-- Mobile --> <div class="w-full h-16 p-4 flex justify-between items-center md:hidden"> <figure> <a href="/"> <img src="./imgs/gigamas_logo.png" alt="" class="w-16"> </a> </figure> <figure> <img id="btnOpenModal" src="./imgs/menu.svg" alt="Abrir menú"> </figure> <div id="navbarMobile" class="hidden fixed inset-0 bg-white z-50"> <div id="closeModal" class="fixed w-full  flex justify-between p-4"> <figure> <a href="/"> <img src="./imgs/gigamas_logo.png" alt="" class="w-32"> </a> </figure> <img src="./imgs/close.svg" alt=""> </div> <nav class="flex flex-col justify-center items-center h-full w-full font-semibold text-2xl"> <a href="#servicios" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Servicios</a> <a href="#planes" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Planes</a> <a href="#contacto" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Contacto</a> </nav> </div> </div>  </div> <!-- slider --> <div class="w-full   "> <!-- <img src="bg_prueba.webp" alt="" /> --> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZUBdBK" prefix="r0" component-url="/_astro/SwiperSlidersHero.CdRfjdk8.js" component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;SwiperSliderHero&quot;,&quot;value&quot;:true}" await-children=""><div class="swiper mySwiper"><div class="swiper-wrapper"><div class="swiper-slide w-full flex justify-center items-center" style="display:flex"><picture class="w-full"><source srcSet="imgs/banner/banner_1_gigamas_m.webp" media="(max-width: 767px)"/><source srcSet="imgs/banner/banner_1_gigamas.webp" media="(min-width: 768px)"/><img src="imgs/banner/banner_1_gigamas.webp" class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto"/></picture></div><div class="swiper-slide w-full flex justify-center items-center" style="display:flex"><picture class="w-full"><source srcSet="imgs/banner/banner_2_gigamas_m.webp" media="(max-width: 767px)"/><source srcSet="imgs/banner/banner_2_gigamas.webp" media="(min-width: 768px)"/><img src="imgs/banner/banner_2_gigamas.webp" class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto"/></picture></div><div class="swiper-slide w-full flex justify-center items-center" style="display:flex"><picture class="w-full"><source srcSet="imgs/banner/banner_3_gigamas_m.webp" media="(max-width: 767px)"/><source srcSet="imgs/banner/banner_3_gigamas.webp" media="(min-width: 768px)"/><img src="imgs/banner/banner_3_gigamas.webp" class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto"/></picture></div><div class="swiper-slide w-full flex justify-center items-center" style="display:flex"><picture class="w-full"><source srcSet="imgs/banner/banner_4_gigamas_m.webp" media="(max-width: 767px)"/><source srcSet="imgs/banner/banner_4_gigamas.webp" media="(min-width: 768px)"/><img src="imgs/banner/banner_4_gigamas.webp" class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto"/></picture></div></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div><div class="swiper-pagination"></div></div><!--astro:end--></astro-island> <!-- <section class="sowertec-section  bg-secondary ">
+		</div> --> <!-- header -->
+        <div class="py-2 md:py-8"> <!-- desktop -->
+            <div class="hidden w-full md:flex justify-between items-center max-w-7xl m-auto">
+                <figure> <a href="/"> <img src="./imgs/gigamas_logo.png" alt="" class="w-32"> </a> </figure>
+                <nav class="flex gap-8"> <a href="#planes"
+                        class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold  hover:md:text-secondary">Planes</a>
+                    <a href="#contacto"
+                        class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Contacto</a>
+                    <a href="#servicios"
+                        class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Servicios</a>
+                </nav> <a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178"
+                    class="bg-fourth p-2 px-8 py-3 font-bold text-cprimary rounded-full transition-all hover:scale-105 duration-100">
+                    CONTACTAR AHORA
+                </a>
+            </div> <!-- Mobile -->
+            <div class="w-full h-16 p-4 flex justify-between items-center md:hidden">
+                <figure> <a href="/"> <img src="./imgs/gigamas_logo.png" alt="" class="w-16"> </a> </figure>
+                <figure> <img id="btnOpenModal" src="./imgs/menu.svg" alt="Abrir menú"> </figure>
+                <div id="navbarMobile" class="hidden fixed inset-0 bg-white z-50">
+                    <div id="closeModal" class="fixed w-full  flex justify-between p-4">
+                        <figure> <a href="/"> <img src="./imgs/gigamas_logo.png" alt="" class="w-32"> </a> </figure>
+                        <img src="./imgs/close.svg" alt="">
+                    </div>
+                    <nav class="flex flex-col justify-center items-center h-full w-full font-semibold text-2xl"> <a
+                            href="#servicios"
+                            class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Servicios</a> <a
+                            href="#planes"
+                            class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Planes</a> <a
+                            href="#contacto"
+                            class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div> <!-- slider -->
+        <div class="w-full   "> <!-- <img src="bg_prueba.webp" alt="" /> -->
+            <style>
+                astro-island,
+                astro-slot,
+                astro-static-slot {
+                    display: contents
+                }
+            </style>
+            <script>(() => { var e = async t => { await (await t())() }; (self.Astro || (self.Astro = {})).load = e; window.dispatchEvent(new Event("astro:load")); })();; (() => { var A = Object.defineProperty; var g = (i, o, a) => o in i ? A(i, o, { enumerable: !0, configurable: !0, writable: !0, value: a }) : i[o] = a; var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a); { let i = { 0: t => m(t), 1: t => a(t), 2: t => new RegExp(t), 3: t => new Date(t), 4: t => new Map(a(t)), 5: t => new Set(a(t)), 6: t => BigInt(t), 7: t => new URL(t), 8: t => new Uint8Array(t), 9: t => new Uint16Array(t), 10: t => new Uint32Array(t) }, o = t => { let [l, e] = t; return l in i ? i[l](e) : void 0 }, a = t => t.map(o), m = t => typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map(([l, e]) => [l, o(e)])); class y extends HTMLElement { constructor() { super(...arguments); d(this, "Component"); d(this, "hydrator"); d(this, "hydrate", async () => { var b; if (!this.hydrator || !this.isConnected) return; let e = (b = this.parentElement) == null ? void 0 : b.closest("astro-island[ssr]"); if (e) { e.addEventListener("astro:hydrate", this.hydrate, { once: !0 }); return } let c = this.querySelectorAll("astro-slot"), n = {}, h = this.querySelectorAll("template[data-astro-template]"); for (let r of h) { let s = r.closest(this.tagName); s != null && s.isSameNode(this) && (n[r.getAttribute("data-astro-template") || "default"] = r.innerHTML, r.remove()) } for (let r of c) { let s = r.closest(this.tagName); s != null && s.isSameNode(this) && (n[r.getAttribute("name") || "default"] = r.innerHTML) } let p; try { p = this.hasAttribute("props") ? m(JSON.parse(this.getAttribute("props"))) : {} } catch (r) { let s = this.getAttribute("component-url") || "<unknown>", v = this.getAttribute("component-export"); throw v && (s += ` (export ${v})`), console.error(`[hydrate] Error parsing props for component ${s}`, this.getAttribute("props"), r), r } let u; await this.hydrator(this)(this.Component, p, n, { client: this.getAttribute("client") }), this.removeAttribute("ssr"), this.dispatchEvent(new CustomEvent("astro:hydrate")) }); d(this, "unmount", () => { this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount")) }) } disconnectedCallback() { document.removeEventListener("astro:after-swap", this.unmount), document.addEventListener("astro:after-swap", this.unmount, { once: !0 }) } connectedCallback() { if (!this.hasAttribute("await-children") || document.readyState === "interactive" || document.readyState === "complete") this.childrenConnectedCallback(); else { let e = () => { document.removeEventListener("DOMContentLoaded", e), c.disconnect(), this.childrenConnectedCallback() }, c = new MutationObserver(() => { var n; ((n = this.lastChild) == null ? void 0 : n.nodeType) === Node.COMMENT_NODE && this.lastChild.nodeValue === "astro:end" && (this.lastChild.remove(), e()) }); c.observe(this, { childList: !0 }), document.addEventListener("DOMContentLoaded", e) } } async childrenConnectedCallback() { let e = this.getAttribute("before-hydration-url"); e && await import(e), this.start() } async start() { let e = JSON.parse(this.getAttribute("opts")), c = this.getAttribute("client"); if (Astro[c] === void 0) { window.addEventListener(`astro:${c}`, () => this.start(), { once: !0 }); return } try { await Astro[c](async () => { let n = this.getAttribute("renderer-url"), [h, { default: p }] = await Promise.all([import(this.getAttribute("component-url")), n ? import(n) : () => () => { }]), u = this.getAttribute("component-export") || "default"; if (!u.includes(".")) this.Component = h[u]; else { this.Component = h; for (let f of u.split(".")) this.Component = this.Component[f] } return this.hydrator = p, this.hydrate }, e, this) } catch (n) { console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`, n) } } attributeChangedCallback() { this.hydrate() } } d(y, "observedAttributes", ["props"]), customElements.get("astro-island") || customElements.define("astro-island", y) } })();</script>
+            <astro-island uid="ZUBdBK" prefix="r0" component-url="/_astro/SwiperSlidersHero.CdRfjdk8.js"
+                component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load"
+                opts="{&quot;name&quot;:&quot;SwiperSliderHero&quot;,&quot;value&quot;:true}" await-children="">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide w-full flex justify-center items-center" style="display:flex">
+                            <picture class="w-full">
+                                <source srcSet="imgs/banner/banner_1_gigamas_m.webp" media="(max-width: 767px)" />
+                                <source srcSet="imgs/banner/banner_1_gigamas.webp" media="(min-width: 768px)" /><img
+                                    src="imgs/banner/banner_1_gigamas.webp"
+                                    class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-center items-center" style="display:flex">
+                            <picture class="w-full">
+                                <source srcSet="imgs/banner/banner_2_gigamas_m.webp" media="(max-width: 767px)" />
+                                <source srcSet="imgs/banner/banner_2_gigamas.webp" media="(min-width: 768px)" /><img
+                                    src="imgs/banner/banner_2_gigamas.webp"
+                                    class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-center items-center" style="display:flex">
+                            <picture class="w-full">
+                                <source srcSet="imgs/banner/banner_3_gigamas_m.webp" media="(max-width: 767px)" />
+                                <source srcSet="imgs/banner/banner_3_gigamas.webp" media="(min-width: 768px)" /><img
+                                    src="imgs/banner/banner_3_gigamas.webp"
+                                    class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide w-full flex justify-center items-center" style="display:flex">
+                            <picture class="w-full">
+                                <source srcSet="imgs/banner/banner_4_gigamas_m.webp" media="(max-width: 767px)" />
+                                <source srcSet="imgs/banner/banner_4_gigamas.webp" media="(min-width: 768px)" /><img
+                                    src="imgs/banner/banner_4_gigamas.webp"
+                                    class="select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div><!--astro:end-->
+            </astro-island> <!-- <section class="sowertec-section  bg-secondary ">
 
 				<img src="./imgs/banner_fiesta_patrias.webp" class="object-cover lg:w-full h-[397px] lg:h-auto sm:object-cover sm:h-auto " alt="">
-			</section> --> </div> <!-- form  --> <astro-island uid="wx3jJ" prefix="r1" component-url="/_astro/Form.BzFi0ioF.js" component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Form&quot;,&quot;value&quot;:true}" await-children=""><form class="w-full bg-form p-4 py-8 mb-16"><h2 class="mb-8 text-center text-3xl font-bold"><span class="text-csecondary">Registrate, </span><span class="text-cprimary">Te Contactaremos.</span></h2><div class="flex gap-4 flex-wrap justify-center mb-8"><input type="text" class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4" placeholder="nombre" name="Name" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{1,60}" title="Ingresa un nombre válido (máximo 60 caracteres)." required=""/><input type="number" class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4" placeholder="telefono" name="tel" id="telefono" pattern="9\d{8}" title="Debe comenzar con 9 y tener 9 dígitos." required=""/><select name="service" class="w-36 h-8 md:w-56 md:h-12 rounded-full px-4 appearance-auto" required=""><option value="">Elegir servicio</option><option value="internet">Internet</option><option value="cable">Cable TV</option><option value="internet y cable">Internet + cable</option> px-4<option value="cámaras">Cámaras</option></select></div><div class="flex justify-center my-4"><button type="submit" class="bg-secondary px-16 py-2 md:w-56 md:h-12 font-bold rounded-full text-white transition-all hover:scale-105 duration-100">Enviar</button></div></form><!--astro:end--></astro-island> </main> <div> <div class="p-5 py-16"> <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">TU MEJOR OPCIÓN EN CONECTIVIDAD</h4> <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-8 md:mb-16">Descubre los Beneficios de Nuestro Servicio de Internet </h2> <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"> --> <div class="flex  gap-4 flex-wrap justify-center items-center "> <div class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20"> <figure> <img src="./imgs/performance.png" alt="" class="min-w-10 max-h-20"> </figure> <div> <h3 class="font-bold">Velocidad superior</h3> <p> Disfruta de una navegación ultrarrápida y sin interrupciones gracias a nuestra avanzada tecnología de fibra óptica.  </p> </div> </div><div class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20"> <figure> <img src="./imgs/support.png" alt="" class="min-w-10 max-h-20"> </figure> <div> <h3 class="font-bold">Atención al Cliente Excepcional</h3> <p> Estamos aquí para ti. Nuestro equipo de soporte está listo para ayudarte con cualquier consulta o problema de manera rápida y eficiente. </p> </div> </div><div class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20"> <figure> <img src="./imgs/router.png" alt="" class="min-w-10 max-h-20"> </figure> <div> <h3 class="font-bold">Conexión Estable</h3> <p> Disfruta de Olvídate de las caídas y fluctuaciones. Te garantizamos una conexión constante y fiable para todas tus actividades en línea. </p> </div> </div><div class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20"> <figure> <img src="./imgs/laptop.png" alt="" class="min-w-10 max-h-20"> </figure> <div> <h3 class="font-bold">Mayor Ancho de Banda</h3> <p> Estamos aquí para ti. Conecta todos tus dispositivos sin perder rendimiento, ideal para videollamadas, streaming y juegos en línea. </p> </div> </div> </div> </div> <div class="max-w-7xl m-auto p-5 lg:px-0 lg:py-16 mb-8" id="planes"> <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
-TU MEJOR OPCIÓN EN CONECTIVIDAD
-</h4> <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-4">
-Los Mejores Planes Para Nuestros Clientes
-</h2> <p class="mb-8 md:mb-16 max-w-lg text-center m-auto">
-Ofrecemos una variedad de opciones diseñadas para adaptarse a todas tus
-        necesidades, desde navegación básica hasta streaming y juegos en línea.
-</p> <astro-island uid="pRlXr" prefix="r2" component-url="/_astro/SwiperSliders.D9Vav9yT.js" component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;SwiperSlider&quot;,&quot;value&quot;:true}" await-children=""><div class="swiper mySwiper"><div class="swiper-wrapper"><div class="swiper-slide"><div class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4"><p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->40<!-- --> Mbps</p><p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">80<!-- --> Mbps</p><sub class="mb-8">velocidad simetrica</sub><p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->50<!-- -->.00</p><p class="mb-8">X MES</p><div class="mb-4 z-10"><a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR AHORA</a></div></div><div class="custom-scrollbar1 mb-8"></div></div><div class="swiper-slide"><div class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4"><p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->50<!-- --> Mbps</p><p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">100<!-- --> Mbps</p><sub class="mb-8">velocidad simetrica</sub><p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->60<!-- -->.00</p><p class="mb-8">X MES</p><div class="mb-4 z-10"><a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR AHORA</a></div></div><div class="custom-scrollbar1 mb-8"></div></div><div class="swiper-slide"><div class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4"><p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->70<!-- --> Mbps</p><p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">140<!-- --> Mbps</p><sub class="mb-8">velocidad simetrica</sub><p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->80<!-- -->.00</p><p class="mb-8">X MES</p><div class="mb-4 z-10"><a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR AHORA</a></div></div><div class="custom-scrollbar1 mb-8"></div></div><div class="swiper-slide"><div class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4"><p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->100<!-- --> Mbps</p><p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">200<!-- --> Mbps</p><sub class="mb-8">velocidad simetrica</sub><p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->99<!-- -->.00</p><p class="mb-8">X MES</p><div class="mb-4 z-10"><a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR AHORA</a></div></div><div class="custom-scrollbar1 mb-8"></div></div></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div><div class="swiper-pagination"></div></div><!--astro:end--></astro-island> <p class="text-xs font-medium text-sixth">
-NOTA: Esta promoción es valida por 1 año para los nuevas instalaciónes.
-        Para las instalaciones fuera de lima la instalaciones se cobrarán previa
-        revision.
-</p> </div> <div class="w-full shadow-sm "> <div class="py-8 px-5 max-w-7xl m-auto mb-16  " id="servicios"> <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
-SERVICICIOS
-</h4> <!-- cable --> <div class="mb-16"> <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-16 md:mb-16">
-Los Mejores Servicios Para Ti
-</h2> <div class="grid sm:grid-cols-2 gap-8"> <div class="flex flex-col justify-center"> <h4 class="text-xs text-start mb-2 text-sixth/70 font-extrabold">
-SERVICICIO DE CABLE
-</h4> <h3 class="text-2xl sm:text-start font-medium mb-8 lg:text-4xl lg:max-w-md"> Disfruta De Las Mejores Series Con Cable </h3> <p class="mb-8 max-w-md"> Conéctate con nuestra fibra óptica y disfruta de internet ultrarrápido y cable de alta calidad.Navega, haz streaming y juega en línea sin interrupciones, mientras disfrutas de tus canales favoritos. ¡Transforma tu hogar en un centro de entretenimiento hoy mismo! </p> <div class="hidden sm:block"> <a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="inline-block text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white transition-all hover:scale-105 duration-100">SOLICITAR AHORA
-</a> </div> </div> <img src="./imgs/family_alegre.jpg" alt="" class="w-full max-w-xl rounded-lg"> <div class="flex justify-center sm:hidden"> <button class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white">SOLICITAR CABLE + INTERNET
-</button> </div> </div> </div> <!-- slider canales --> <div class="relative mb-16"> <div class="absolute -top-4 w-full text-center"> <span class="relative bg-white px-4 z-50 text-2xl font-bold">
-+50 CANALES
-</span> </div> <astro-island uid="1VTjP5" prefix="r3" component-url="/_astro/SwiperSliderCanales.BpMi0eZZ.js" component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;SwiperSliderCanales&quot;,&quot;value&quot;:true}" await-children=""><div class="swiper mySwiper relative border-2 border-black/50 z-[10] w-full h-36 rounded-xl mb-16 mt-8 transition-all duration-100 ease-linear"><div class="swiper-wrapper"><div class="swiper-slide w-full h-full flex justify-center items-center" style="display:flex"><img src="./imgs/canales/espa.png" alt="" class=" sm:h-[94px] m-auto"/></div><div class="swiper-slide" style="display:flex"><img src="./imgs/canales/National_Geographic_Channel.png" alt="" class="h-[94x] m-auto"/></div><div class="swiper-slide h-full flex justify-center items-center" style="display:flex"><img src="./imgs/canales/disney_junior.png" alt="" class="h-[94px]  m-auto"/></div><div class="swiper-slide h-full flex justify-center items-center" style="display:flex"><img src="./imgs/canales/fox.png" alt="" class="h-[94px]  m-auto"/></div><div class="swiper-slide h-full flex justify-center items-center" style="display:flex"><img src="./imgs/canales/star_channel.png" alt="" class="h-[94px]  m-auto"/></div></div><div class="custom-scrollbar-canal"></div></div><!--astro:end--></astro-island> </div> <!-- vigilancia --> <div> <div class="grid sm:grid-cols-2 gap-4"> <div class=" sm:order-2 lg:gap-0 flex flex-col justify-center items-end max-w-md   sm:justify-self-end"> <h4 class="text-xs text-start mb-2 text-sixth/70 font-extrabold w-full"> <div class="w-full ">VENTA DE CÁMARAS</div> </h4> <h2 class="text-2xl sm:text-start font-medium mb-8 lg:text-4xl lg:max-w-md">
-Vigilancia de Confianza para tu Tranquilidad
-</h2> <p class="max-w-md mb-8">
-Descubre nuestras cámaras de seguridad de alta tecnología,
-                    diseñadas para proteger lo que más quieres. Con resolución
-                    HD, visión nocturna y alertas instantáneas, tendrás la
-                    certeza de que tu hogar o negocio están siempre bajo
-                    vigilancia.
-</p> <p class="block w-full mb-8">
-Hasta el momento solo se hacen pedidos.
-</p> <div class="hidden sm:flex w-full gap-4"> <a target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white">SOLICITAR AHORA
-</a> <!-- <button
+			</section> -->
+        </div> <!-- form  --> <astro-island uid="wx3jJ" prefix="r1" component-url="/_astro/Form.BzFi0ioF.js"
+            component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load"
+            opts="{&quot;name&quot;:&quot;Form&quot;,&quot;value&quot;:true}" await-children="">
+            <form class="w-full bg-form p-4 py-8 mb-16">
+                <h2 class="mb-8 text-center text-3xl font-bold"><span class="text-csecondary">Registrate, </span><span
+                        class="text-cprimary">Te Contactaremos.</span></h2>
+                <div class="flex gap-4 flex-wrap justify-center mb-8"><input type="text"
+                        class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4" placeholder="nombre" name="Name"
+                        pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{1,60}" title="Ingresa un nombre válido (máximo 60 caracteres)."
+                        required="" /><input type="number" class="w-36 h-8 md:w-56 md:h-12 bg-primary rounded-full px-4"
+                        placeholder="telefono" name="tel" id="telefono" pattern="9\d{8}"
+                        title="Debe comenzar con 9 y tener 9 dígitos." required="" /><select name="service"
+                        class="w-36 h-8 md:w-56 md:h-12 rounded-full px-4 appearance-auto" required="">
+                        <option value="">Elegir servicio</option>
+                        <option value="internet">Internet</option>
+                        <option value="cable">Cable TV</option>
+                        <option value="internet y cable">Internet + cable</option> px-4<option value="cámaras">Cámaras
+                        </option>
+                    </select></div>
+                <div class="flex justify-center my-4"><button type="submit"
+                        class="bg-secondary px-16 py-2 md:w-56 md:h-12 font-bold rounded-full text-white transition-all hover:scale-105 duration-100">Enviar</button>
+                </div>
+            </form><!--astro:end-->
+        </astro-island>
+    </main>
+    <div>
+        <div class="p-5 py-16">
+            <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">TU MEJOR OPCIÓN EN CONECTIVIDAD</h4>
+            <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-8 md:mb-16">Descubre los Beneficios de
+                Nuestro Servicio de Internet </h2>
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"> -->
+            <div class="flex  gap-4 flex-wrap justify-center items-center ">
+                <div
+                    class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20">
+                    <figure> <img src="./imgs/performance.png" alt="" class="min-w-10 max-h-20"> </figure>
+                    <div>
+                        <h3 class="font-bold">Velocidad superior</h3>
+                        <p> Disfruta de una navegación ultrarrápida y sin interrupciones gracias a nuestra avanzada
+                            tecnología de fibra óptica. </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20">
+                    <figure> <img src="./imgs/support.png" alt="" class="min-w-10 max-h-20"> </figure>
+                    <div>
+                        <h3 class="font-bold">Atención al Cliente Excepcional</h3>
+                        <p> Estamos aquí para ti. Nuestro equipo de soporte está listo para ayudarte con cualquier
+                            consulta o problema de manera rápida y eficiente. </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20">
+                    <figure> <img src="./imgs/router.png" alt="" class="min-w-10 max-h-20"> </figure>
+                    <div>
+                        <h3 class="font-bold">Conexión Estable</h3>
+                        <p> Disfruta de Olvídate de las caídas y fluctuaciones. Te garantizamos una conexión constante y
+                            fiable para todas tus actividades en línea. </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full sm:max-w-64 sm:h-[324px]  flex sm:flex-col gap-4 bg-fifth p-4 py-4 sm:py-8 rounded-lg border-2 border-secondary/20">
+                    <figure> <img src="./imgs/laptop.png" alt="" class="min-w-10 max-h-20"> </figure>
+                    <div>
+                        <h3 class="font-bold">Mayor Ancho de Banda</h3>
+                        <p> Estamos aquí para ti. Conecta todos tus dispositivos sin perder rendimiento, ideal para
+                            videollamadas, streaming y juegos en línea. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl m-auto p-5 lg:px-0 lg:py-16 mb-8" id="planes">
+            <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
+                TU MEJOR OPCIÓN EN CONECTIVIDAD
+            </h4>
+            <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-4">
+                Los Mejores Planes Para Nuestros Clientes
+            </h2>
+            <p class="mb-8 md:mb-16 max-w-lg text-center m-auto">
+                Ofrecemos una variedad de opciones diseñadas para adaptarse a todas tus
+                necesidades, desde navegación básica hasta streaming y juegos en línea.
+            </p> <astro-island uid="pRlXr" prefix="r2" component-url="/_astro/SwiperSliders.D9Vav9yT.js"
+                component-export="default" renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load"
+                opts="{&quot;name&quot;:&quot;SwiperSlider&quot;,&quot;value&quot;:true}" await-children="">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4">
+                                <p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->40<!-- -->
+                                    Mbps</p>
+                                <p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">80<!-- -->
+                                    Mbps</p><sub class="mb-8">velocidad simetrica</sub>
+                                <p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->50<!-- -->.00
+                                </p>
+                                <p class="mb-8">X MES</p>
+                                <div class="mb-4 z-10"><a target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=51983422178"
+                                        class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR
+                                        AHORA</a></div>
+                            </div>
+                            <div class="custom-scrollbar1 mb-8"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4">
+                                <p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->50<!-- -->
+                                    Mbps</p>
+                                <p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">100<!-- -->
+                                    Mbps</p><sub class="mb-8">velocidad simetrica</sub>
+                                <p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->60<!-- -->.00
+                                </p>
+                                <p class="mb-8">X MES</p>
+                                <div class="mb-4 z-10"><a target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=51983422178"
+                                        class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR
+                                        AHORA</a></div>
+                            </div>
+                            <div class="custom-scrollbar1 mb-8"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4">
+                                <p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->70<!-- -->
+                                    Mbps</p>
+                                <p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">140<!-- -->
+                                    Mbps</p><sub class="mb-8">velocidad simetrica</sub>
+                                <p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->80<!-- -->.00
+                                </p>
+                                <p class="mb-8">X MES</p>
+                                <div class="mb-4 z-10"><a target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=51983422178"
+                                        class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR
+                                        AHORA</a></div>
+                            </div>
+                            <div class="custom-scrollbar1 mb-8"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-full h-full border-4 border-secondary rounded-lg flex flex-col justify-center text-center p-4">
+                                <p class="text-xl text-center mb-8 text-cfourth line-through">Antes: <!-- -->100<!-- -->
+                                    Mbps</p>
+                                <p class="text-4xl md:text-6xl text-center font-extrabold mb-4 text-cfourth">200<!-- -->
+                                    Mbps</p><sub class="mb-8">velocidad simetrica</sub>
+                                <p class="text-4xl lgtext-6xl font-extrabold mb-4 text-cfourth">s/<!-- -->99<!-- -->.00
+                                </p>
+                                <p class="mb-8">X MES</p>
+                                <div class="mb-4 z-10"><a target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=51983422178"
+                                        class="inline-block bg-secondary px-6 z-20 py-3 transition-all hover:scale-105 duration-100  rounded-full text-white ">SOLICITAR
+                                        AHORA</a></div>
+                            </div>
+                            <div class="custom-scrollbar1 mb-8"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div><!--astro:end-->
+            </astro-island>
+            <p class="text-xs font-medium text-sixth">
+                NOTA: Esta promoción es valida por 1 año para los nuevas instalaciónes.
+                Para las instalaciones fuera de lima la instalaciones se cobrarán previa
+                revision.
+            </p>
+        </div>
+        <div class="w-full shadow-sm ">
+            <div class="py-8 px-5 max-w-7xl m-auto mb-16  " id="servicios">
+                <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
+                    SERVICICIOS
+                </h4> <!-- cable -->
+                <div class="mb-16">
+                    <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-16 md:mb-16">
+                        Los Mejores Servicios Para Ti
+                    </h2>
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div class="flex flex-col justify-center">
+                            <h4 class="text-xs text-start mb-2 text-sixth/70 font-extrabold">
+                                SERVICICIO DE CABLE
+                            </h4>
+                            <h3 class="text-2xl sm:text-start font-medium mb-8 lg:text-4xl lg:max-w-md"> Disfruta De Las
+                                Mejores Series Con Cable </h3>
+                            <p class="mb-8 max-w-md"> Conéctate con nuestra fibra óptica y disfruta de internet
+                                ultrarrápido y cable de alta calidad.Navega, haz streaming y juega en línea sin
+                                interrupciones, mientras disfrutas de tus canales favoritos. ¡Transforma tu hogar en un
+                                centro de entretenimiento hoy mismo! </p>
+                            <div class="hidden sm:block"> <a target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=51983422178"
+                                    class="inline-block text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white transition-all hover:scale-105 duration-100">SOLICITAR
+                                    AHORA
+                                </a> </div>
+                        </div> <img src="./imgs/family_alegre.jpg" alt="" class="w-full max-w-xl rounded-lg">
+                        <div class="flex justify-center sm:hidden"> <button
+                                class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white">SOLICITAR
+                                CABLE + INTERNET
+                            </button> </div>
+                    </div>
+                </div> <!-- slider canales -->
+                <div class="relative mb-16">
+                    <div class="absolute -top-4 w-full text-center"> <span
+                            class="relative bg-white px-4 z-50 text-2xl font-bold">
+                            +50 CANALES
+                        </span> </div> <astro-island uid="1VTjP5" prefix="r3"
+                        component-url="/_astro/SwiperSliderCanales.BpMi0eZZ.js" component-export="default"
+                        renderer-url="/_astro/client.BY2mA-CD.js" props="{}" ssr="" client="load"
+                        opts="{&quot;name&quot;:&quot;SwiperSliderCanales&quot;,&quot;value&quot;:true}"
+                        await-children="">
+                        <div
+                            class="swiper mySwiper relative border-2 border-black/50 z-[10] w-full h-36 rounded-xl mb-16 mt-8 transition-all duration-100 ease-linear">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide w-full h-full flex justify-center items-center"
+                                    style="display:flex"><img src="./imgs/canales/espa.png" alt=""
+                                        class=" sm:h-[94px] m-auto" /></div>
+                                <div class="swiper-slide" style="display:flex"><img
+                                        src="./imgs/canales/National_Geographic_Channel.png" alt=""
+                                        class="h-[94x] m-auto" /></div>
+                                <div class="swiper-slide h-full flex justify-center items-center" style="display:flex">
+                                    <img src="./imgs/canales/disney_junior.png" alt="" class="h-[94px]  m-auto" /></div>
+                                <div class="swiper-slide h-full flex justify-center items-center" style="display:flex">
+                                    <img src="./imgs/canales/fox.png" alt="" class="h-[94px]  m-auto" /></div>
+                                <div class="swiper-slide h-full flex justify-center items-center" style="display:flex">
+                                    <img src="./imgs/canales/star_channel.png" alt="" class="h-[94px]  m-auto" /></div>
+                            </div>
+                            <div class="custom-scrollbar-canal"></div>
+                        </div><!--astro:end-->
+                    </astro-island>
+                </div> <!-- vigilancia -->
+                <div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div
+                            class=" sm:order-2 lg:gap-0 flex flex-col justify-center items-end max-w-md   sm:justify-self-end">
+                            <h4 class="text-xs text-start mb-2 text-sixth/70 font-extrabold w-full">
+                                <div class="w-full ">VENTA DE CÁMARAS</div>
+                            </h4>
+                            <h2 class="text-2xl sm:text-start font-medium mb-8 lg:text-4xl lg:max-w-md">
+                                Vigilancia de Confianza para tu Tranquilidad
+                            </h2>
+                            <p class="max-w-md mb-8">
+                                Descubre nuestras cámaras de seguridad de alta tecnología,
+                                diseñadas para proteger lo que más quieres. Con resolución
+                                HD, visión nocturna y alertas instantáneas, tendrás la
+                                certeza de que tu hogar o negocio están siempre bajo
+                                vigilancia.
+                            </p>
+                            <p class="block w-full mb-8">
+                                Hasta el momento solo se hacen pedidos.
+                            </p>
+                            <div class="hidden sm:flex w-full gap-4"> <a target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=51983422178"
+                                    class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-white">SOLICITAR
+                                    AHORA
+                                </a> <!-- <button
                         class="text-xs sm:text-base border-2 px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold"
                         >VER MAS
-                    </button> --> </div> </div> <img src="./imgs/test-camaras.jpg" alt="" class="w-full max-w-xl rounded-lg"> <div class="flex gap-4 justify-center  md:justify-start w-full sm:hidden"> <button class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-cprimary">COTIZAR CÁMARAS
-</button> <!-- <button
+                    </button> --> </div>
+                        </div> <img src="./imgs/test-camaras.jpg" alt="" class="w-full max-w-xl rounded-lg">
+                        <div class="flex gap-4 justify-center  md:justify-start w-full sm:hidden"> <button
+                                class="text-xs sm:text-base bg-secondary px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold text-cprimary">COTIZAR
+                                CÁMARAS
+                            </button> <!-- <button
                     class="text-xs sm:text-base border-2 px-6 py-3 sm:px-10 sm:py-4 rounded-full font-bold"
                     >VER MAS
-                </button> --> </div> </div> </div> </div> </div> <div class="max-w-7xl m-auto px-4 mb-32"> <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
-UBICACIÓN
-</h4> <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-4">
-Estamos Cada Vez Más Cerca De Ti
-</h2> <p class="max-w-md m-auto mb-16">
-Nos encontramos en una ubicación céntrica para brindarte el mejor
-        servicio posible. Visítanos para más información, soporte técnico o para
-        conocer más sobre nuestros servicios.
-</p> <div class=""> <div class="m-auto rounded-xl overflow-hidden"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1DQykhd7x8DGhEJsa_6N3ANK_w8s4KQ0&ehbc=2E312F&noprof=1" class="w-full" height="480"></iframe> </div> </div> </div> <div class="px-4 max-w-7xl m-auto mb-32 "> <h4 class="text-xs text-center mb-2 text-sixth/70 font-extrabold">
-TERMINOS Y CONDICIONES
-</h4> <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-16">
-Resuelve Tus Dudas
-</h2> <div class="rounded-xl overflow-hidden"> <!-- item --> <div> <div class="bg-blue-100 "> <div class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"> <p class="text-base text-black/80 font-medium">
-¿Qué requisitos necesito para que me instalen internet ?
-</p> <figure class="w-8"> <img src="./imgs/arrow_down.svg" alt="arrow_down"> <img src="./imgs/arrow_up.svg" alt="" class="arrow_up hidden"> </figure> </div> <div class="term_description hidden w-full pb-4 px-6"> <div class="text-black/70">
-Lo único que tiene que tener es cobertura por su zona.
-                        Nosotros nos encargamos de lo demás.
-</div> </div> </div> <hr> </div> <!-- item --> <div> <div class="bg-blue-100 "> <div class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"> <p class="text-base text-black/80 font-medium">
-¿Como funciona el proceso de pago ?
-</p> <figure class="w-8"> <img src="./imgs/arrow_down.svg" alt="arrow_down"> <img src="./imgs/arrow_up.svg" alt="" class="arrow_up hidden"> </figure> </div> <div class="term_description hidden w-full pb-4 px-6"> <div class="text-black/70"> <li>
-La facturación de tu servicio es mensual y la
-                            modalidad de pago es: mes vencido.
-</li> <li>
-Los días de servicio recibido durante el mes de
-                            instalación, serán facturados (prorrateados) en el
-                            mes inmediato siguiente a la activación del servicio.
-</li> </div> </div> </div> <hr> </div> <!-- <div class="bg-fifth">
+                </button> --> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl m-auto px-4 mb-32">
+            <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
+                UBICACIÓN
+            </h4>
+            <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-4">
+                Estamos Cada Vez Más Cerca De Ti
+            </h2>
+            <p class="max-w-md m-auto mb-16">
+                Nos encontramos en una ubicación céntrica para brindarte el mejor
+                servicio posible. Visítanos para más información, soporte técnico o para
+                conocer más sobre nuestros servicios.
+            </p>
+            <div class="">
+                <div class="m-auto rounded-xl overflow-hidden"> <iframe
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1DQykhd7x8DGhEJsa_6N3ANK_w8s4KQ0&ehbc=2E312F&noprof=1"
+                        class="w-full" height="480"></iframe> </div>
+            </div>
+        </div>
+        <div class="px-4 max-w-7xl m-auto mb-32 ">
+            <h4 class="text-xs text-center mb-2 text-sixth/70 font-extrabold">
+                TERMINOS Y CONDICIONES
+            </h4>
+            <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-16">
+                Resuelve Tus Dudas
+            </h2>
+            <div class="rounded-xl overflow-hidden"> <!-- item -->
+                <div>
+                    <div class="bg-blue-100 ">
+                        <div class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer">
+                            <p class="text-base text-black/80 font-medium">
+                                ¿Qué requisitos necesito para que me instalen internet ?
+                            </p>
+                            <figure class="w-8"> <img src="./imgs/arrow_down.svg" alt="arrow_down"> <img
+                                    src="./imgs/arrow_up.svg" alt="" class="arrow_up hidden"> </figure>
+                        </div>
+                        <div class="term_description hidden w-full pb-4 px-6">
+                            <div class="text-black/70">
+                                Lo único que tiene que tener es cobertura por su zona.
+                                Nosotros nos encargamos de lo demás.
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div> <!-- item -->
+                <div>
+                    <div class="bg-blue-100 ">
+                        <div class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer">
+                            <p class="text-base text-black/80 font-medium">
+                                ¿Como funciona el proceso de pago ?
+                            </p>
+                            <figure class="w-8"> <img src="./imgs/arrow_down.svg" alt="arrow_down"> <img
+                                    src="./imgs/arrow_up.svg" alt="" class="arrow_up hidden"> </figure>
+                        </div>
+                        <div class="term_description hidden w-full pb-4 px-6">
+                            <div class="text-black/70">
+                                <li>
+                                    La facturación de tu servicio es mensual y la
+                                    modalidad de pago es: mes vencido.
+                                </li>
+                                <li>
+                                    Los días de servicio recibido durante el mes de
+                                    instalación, serán facturados (prorrateados) en el
+                                    mes inmediato siguiente a la activación del servicio.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div> <!-- <div class="bg-fifth">
                 <div
                     class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
                 >
@@ -103,18 +483,46 @@ Los días de servicio recibido durante el mes de
                         doloribus. Saepe ea quo minima!
                     </div>
                 </div>
-            </div> --> <hr> </div> </div>  <div id="contacto" class="pt-16 pb-32 px-4 bg-secondary w-full"> <div class="max-w-7xl m-auto flex flex-col lg:flex-row justify-center items-center lg:items-start md:justify-between"> <!-- title bussines --> <div class="mb-4"> <img src="./imgs/logo_white_small.png" class=" max-w-48 m-auto mb-8" alt=""> <p class="sm:max-w-md lg:max-w-md text-slate-300 text-justify">
-En GIGAMAS, nos dedicamos a ofrecer soluciones innovadoras y
-                confiables en telecomunicaciones. Nos comprometemos a
-                proporcionar conexiones rápidas y servicios adaptados que
-                faciliten la comunicación efectiva tanto para individuos como
-                para empresas. Descubre cómo GIGAMAS puede mejorar tu
-                experiencia de conectividad hoy mismo.
-</p> </div> <!-- redes --> <div> <h2 class="text-center font-medium mb-6 text-white text-2xl">
-Redes Sociales
-</h2> <div class="mb-8 flex gap-8 text-slate-300"> <a href="https://www.tiktok.com/@gigamas.pe" class="w-8 hover:scale-125 transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer"> <img src="./imgs/icon/tiktok.svg" alt=""> </a> <a href="https://www.facebook.com/Gigamas.pe" class="w-8 hover:scale-125 transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer"> <img src="./imgs/icon/facebook.svg" alt=""> </a> <a href="https://www.instagram.com/gigamas.pe/?hl=es-la" class="w-8 hover:scale-105 transition duration-300 ease-in-out" target="_blank" rel="noopener noreferrer"> <img src="./imgs/icon/instagram.svg" alt=""> </a> </div> </div> <!-- contactos --> <div class="flex flex-col gap-4 text-slate-300"> <h2 class="text-cprimary text-center font-bold mb-6 text-2xl">
-Contactos
-</h2> <p id="phone" data-number="983 422 178" class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex lg:flex-row gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"> <span class="flex"><img class="" src="./imgs/copy.svg" alt=""> ATENCIÓN AL CLIENTE</span> <span class="number">983 422 178</span> </p> <!-- <p
+            </div> -->
+                <hr>
+            </div>
+        </div>
+        <div id="contacto" class="pt-16 pb-32 px-4 bg-secondary w-full">
+            <div
+                class="max-w-7xl m-auto flex flex-col lg:flex-row justify-center items-center lg:items-start md:justify-between">
+                <!-- title bussines -->
+                <div class="mb-4"> <img src="./imgs/logo_white_small.png" class=" max-w-48 m-auto mb-8" alt="">
+                    <p class="sm:max-w-md lg:max-w-md text-slate-300 text-justify">
+                        En GIGAMAS, nos dedicamos a ofrecer soluciones innovadoras y
+                        confiables en telecomunicaciones. Nos comprometemos a
+                        proporcionar conexiones rápidas y servicios adaptados que
+                        faciliten la comunicación efectiva tanto para individuos como
+                        para empresas. Descubre cómo GIGAMAS puede mejorar tu
+                        experiencia de conectividad hoy mismo.
+                    </p>
+                </div> <!-- redes -->
+                <div>
+                    <h2 class="text-center font-medium mb-6 text-white text-2xl">
+                        Redes Sociales
+                    </h2>
+                    <div class="mb-8 flex gap-8 text-slate-300"> <a href="https://www.tiktok.com/@gigamas.pe"
+                            class="w-8 hover:scale-125 transition duration-300 ease-in-out" target="_blank"
+                            rel="noopener noreferrer"> <img src="./imgs/icon/tiktok.svg" alt=""> </a> <a
+                            href="https://www.facebook.com/Gigamas.pe"
+                            class="w-8 hover:scale-125 transition duration-300 ease-in-out" target="_blank"
+                            rel="noopener noreferrer"> <img src="./imgs/icon/facebook.svg" alt=""> </a> <a
+                            href="https://www.instagram.com/gigamas.pe/?hl=es-la"
+                            class="w-8 hover:scale-105 transition duration-300 ease-in-out" target="_blank"
+                            rel="noopener noreferrer"> <img src="./imgs/icon/instagram.svg" alt=""> </a> </div>
+                </div> <!-- contactos -->
+                <div class="flex flex-col gap-4 text-slate-300">
+                    <h2 class="text-cprimary text-center font-bold mb-6 text-2xl">
+                        Contactos
+                    </h2>
+                    <p id="phone" data-number="983 422 178"
+                        class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex lg:flex-row gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+                        <span class="flex"><img class="" src="./imgs/copy.svg" alt=""> ATENCIÓN AL CLIENTE</span> <span
+                            class="number">983 422 178</span> </p> <!-- <p
                 id="email"
                 data-number="977 876 630"
                 class="bg-white text-black/70 font-bold px-6 py-3 rounded-md flex  lg:flex-row gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
@@ -123,43 +531,149 @@ Contactos
                     ><img class="" src="./imgs/copy.svg" alt="" />CALL CENTER</span
                 >
                 <span class="number">977 876 630</span>
-            </p> --> <p id="phone2" data-number="947 341 565" class="relative bg-white text-black/70 font-bold px-6 py-3 rounded-md flex  lg:flex-row gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out"> <span class="flex"><img class="" src="./imgs/copy.svg" alt=""> SOPORTE TECNICO</span> <span> <span class="number">947 341 565 </span></span> </p> <div> <div id="tooltip" class="hidden text-center font-bold text-white"> <sub class="bg-white text-secondary p-2 px-6 rounded-md transition-all duration-300 ease-in-out">Copiado.</sub> </div> </div> </div>  </div> </div> </div> <div class="relative z-50" data-astro-cid-hs4qfev3> <div class="container" data-astro-cid-hs4qfev3> <section id="ws" class="hidden" data-ws="" data-astro-cid-hs4qfev3> <header class="" id="header-wp" data-astro-cid-hs4qfev3> <div class="header_icon_wp" data-astro-cid-hs4qfev3> <svg width="32px" height="32px" class="nta-whatsapp-default-avatar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" data-astro-cid-hs4qfev3> <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
-                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z" data-astro-cid-hs4qfev3></path> <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
+            </p> -->
+                    <p id="phone2" data-number="947 341 565"
+                        class="relative bg-white text-black/70 font-bold px-6 py-3 rounded-md flex  lg:flex-row gap-2 cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+                        <span class="flex"><img class="" src="./imgs/copy.svg" alt=""> SOPORTE TECNICO</span> <span>
+                            <span class="number">947 341 565 </span></span> </p>
+                    <div>
+                        <div id="tooltip" class="hidden text-center font-bold text-white"> <sub
+                                class="bg-white text-secondary p-2 px-6 rounded-md transition-all duration-300 ease-in-out">Copiado.</sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative z-50" data-astro-cid-hs4qfev3>
+        <div class="container" data-astro-cid-hs4qfev3>
+            <section id="ws" class="hidden" data-ws="" data-astro-cid-hs4qfev3>
+                <header class="" id="header-wp" data-astro-cid-hs4qfev3>
+                    <div class="header_icon_wp" data-astro-cid-hs4qfev3> <svg width="32px" height="32px"
+                            class="nta-whatsapp-default-avatar" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                            xml:space="preserve" data-astro-cid-hs4qfev3>
+                            <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
+                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"
+                                data-astro-cid-hs4qfev3></path>
+                            <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
                   c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234
-                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z" data-astro-cid-hs4qfev3></path> <path style="fill:#FEFEFE;" d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
+                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"
+                                data-astro-cid-hs4qfev3></path>
+                            <path style="fill:#FEFEFE;"
+                                d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
                   c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048
                   c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359
                   c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248
                   c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062
-                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945" data-astro-cid-hs4qfev3></path> </svg> </div> <div data-astro-cid-hs4qfev3> <div class="text-lg" data-astro-cid-hs4qfev3>Iniciar una conversación</div> <div class="text-xs" data-astro-cid-hs4qfev3>
-¡Hola! Haga clic en uno de nuestros miembros a
-                        continuación para chatear WhatsApp
-</div> </div> </header> <div class="container_worker_wp" data-astro-cid-hs4qfev3> <a class="worker_wp hover:scale-105 transition-transform duration-100 ease-linear" target="_blank" href="https://api.whatsapp.com/send?phone=51983422178" rel="nofollow noopener noreferrer" class="bg-neutral-100 border-l-2 border-green-500 p-4 rounded flex gap-4 hover:shadow-lg transition-shadow duration-300" data-astro-cid-hs4qfev3> <div data-astro-cid-hs4qfev3> <svg width="32px" height="32px" class="nta-whatsapp-default-avatar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" data-astro-cid-hs4qfev3> <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
-                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z" data-astro-cid-hs4qfev3></path> <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
+                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"
+                                data-astro-cid-hs4qfev3></path>
+                        </svg> </div>
+                    <div data-astro-cid-hs4qfev3>
+                        <div class="text-lg" data-astro-cid-hs4qfev3>Iniciar una conversación</div>
+                        <div class="text-xs" data-astro-cid-hs4qfev3>
+                            ¡Hola! Haga clic en uno de nuestros miembros a
+                            continuación para chatear WhatsApp
+                        </div>
+                    </div>
+                </header>
+                <div class="container_worker_wp" data-astro-cid-hs4qfev3> <a
+                        class="worker_wp hover:scale-105 transition-transform duration-100 ease-linear" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=51983422178" rel="nofollow noopener noreferrer"
+                        class="bg-neutral-100 border-l-2 border-green-500 p-4 rounded flex gap-4 hover:shadow-lg transition-shadow duration-300"
+                        data-astro-cid-hs4qfev3>
+                        <div data-astro-cid-hs4qfev3> <svg width="32px" height="32px"
+                                class="nta-whatsapp-default-avatar" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve" data-astro-cid-hs4qfev3>
+                                <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
+                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"
+                                    data-astro-cid-hs4qfev3></path>
+                                <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
                   c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234
-                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z" data-astro-cid-hs4qfev3></path> <path style="fill:#FEFEFE;" d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
+                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"
+                                    data-astro-cid-hs4qfev3></path>
+                                <path style="fill:#FEFEFE;"
+                                    d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
                   c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048
                   c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359
                   c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248
                   c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062
-                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945" data-astro-cid-hs4qfev3></path> </svg> </div> <div data-astro-cid-hs4qfev3> <div class="wp_title_worker" data-astro-cid-hs4qfev3>Atención al Cliente</div> <div class="wp_desc_worker" data-astro-cid-hs4qfev3>
-Escríbeme para una cualquier consulta
-</div> </div> </a> <a class="worker_wp hover:scale-105 transition-transform duration-100 ease-linear" target="_blank" href="https://api.whatsapp.com/send?phone=51947341565" rel="nofollow noopener noreferrer" class="bg-neutral-100 border-l-2 border-green-500 p-4 rounded flex gap-4 hover:shadow-lg transition-shadow duration-300" data-astro-cid-hs4qfev3> <div data-astro-cid-hs4qfev3> <svg width="32px" height="32px" class="nta-whatsapp-default-avatar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" data-astro-cid-hs4qfev3> <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
-                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z" data-astro-cid-hs4qfev3></path> <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
+                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"
+                                    data-astro-cid-hs4qfev3></path>
+                            </svg> </div>
+                        <div data-astro-cid-hs4qfev3>
+                            <div class="wp_title_worker" data-astro-cid-hs4qfev3>Atención al Cliente</div>
+                            <div class="wp_desc_worker" data-astro-cid-hs4qfev3>
+                                Escríbeme para una cualquier consulta
+                            </div>
+                        </div>
+                    </a> <a class="worker_wp hover:scale-105 transition-transform duration-100 ease-linear"
+                        target="_blank" href="https://api.whatsapp.com/send?phone=51947341565"
+                        rel="nofollow noopener noreferrer"
+                        class="bg-neutral-100 border-l-2 border-green-500 p-4 rounded flex gap-4 hover:shadow-lg transition-shadow duration-300"
+                        data-astro-cid-hs4qfev3>
+                        <div data-astro-cid-hs4qfev3> <svg width="32px" height="32px"
+                                class="nta-whatsapp-default-avatar" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve" data-astro-cid-hs4qfev3>
+                                <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
+                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"
+                                    data-astro-cid-hs4qfev3></path>
+                                <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
                   c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234
-                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z" data-astro-cid-hs4qfev3></path> <path style="fill:#FEFEFE;" d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
+                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"
+                                    data-astro-cid-hs4qfev3></path>
+                                <path style="fill:#FEFEFE;"
+                                    d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
                   c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048
                   c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359
                   c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248
                   c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062
-                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945" data-astro-cid-hs4qfev3></path> </svg> </div> <div data-astro-cid-hs4qfev3> <div class="wp_title_worker" data-astro-cid-hs4qfev3>Soporte Técnico</div> <div class="wp_desc_worker" data-astro-cid-hs4qfev3>
-Escríbeme para una cualquier consulta
-</div> </div> </a> </div> </section> <button id="btn-w" class="" data-astro-cid-hs4qfev3> <div id="icon-wp" data-astro-cid-hs4qfev3> <svg width="32" height="32" class="" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" data-astro-cid-hs4qfev3> <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
-                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z" data-astro-cid-hs4qfev3></path> <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
+                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"
+                                    data-astro-cid-hs4qfev3></path>
+                            </svg> </div>
+                        <div data-astro-cid-hs4qfev3>
+                            <div class="wp_title_worker" data-astro-cid-hs4qfev3>Soporte Técnico</div>
+                            <div class="wp_desc_worker" data-astro-cid-hs4qfev3>
+                                Escríbeme para una cualquier consulta
+                            </div>
+                        </div>
+                    </a> </div>
+            </section> <button id="btn-w" class="" data-astro-cid-hs4qfev3>
+                <div id="icon-wp" data-astro-cid-hs4qfev3> <svg width="32" height="32" class="" version="1.1"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve" data-astro-cid-hs4qfev3>
+                        <path style="fill:#EDEDED;" d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0
+                  S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"
+                            data-astro-cid-hs4qfev3></path>
+                        <path style="fill:#55CD6C;" d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662
                   c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234
-                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z" data-astro-cid-hs4qfev3></path> <path style="fill:#FEFEFE;" d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
+                  c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"
+                            data-astro-cid-hs4qfev3></path>
+                        <path style="fill:#FEFEFE;"
+                            d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297
                   c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048
                   c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359
                   c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248
                   c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062
-                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945" data-astro-cid-hs4qfev3></path> </svg> </div> <div id="icon-close" class="hidden" data-astro-cid-hs4qfev3> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);" data-astro-cid-hs4qfev3> <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z" data-astro-cid-hs4qfev3></path> </svg> </div> </button> </div> </div>     </body></html>
+                  l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"
+                            data-astro-cid-hs4qfev3></path>
+                    </svg> </div>
+                <div id="icon-close" class="hidden" data-astro-cid-hs4qfev3> <svg xmlns="http://www.w3.org/2000/svg"
+                        width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"
+                        data-astro-cid-hs4qfev3>
+                        <path
+                            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+                            data-astro-cid-hs4qfev3></path>
+                    </svg> </div>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
