@@ -1,18 +1,19 @@
 ---
 import { dataTerms } from "../../data";
+import { dataPayMethod } from "../../data";
 ---
 
-<div class="px-4 max-w-7xl m-auto mb-32 ">
+<div class="px-4 max-w-7xl m-auto mb-16">
     <h4 class="text-xs text-center mb-2 text-sixth/70 font-extrabold">
         TERMINOS Y CONDICIONES
     </h4>
-    <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-16">
+    <h2 class="text-3xl sm:text-4xl text-center font-extrabold mb-16">
         Resuelve Tus Dudas
     </h2>
     <div class="rounded-xl overflow-hidden">
         <!-- item -->
         <div>
-            <div class="bg-blue-100 ">
+            <div class="bg-blue-100">
                 <div
                     class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
                 >
@@ -28,7 +29,7 @@ import { dataTerms } from "../../data";
                         />
                     </figure>
                 </div>
-                
+
                 <div class="term_description hidden w-full pb-4 px-6">
                     <div class="text-black/70">
                         Lo único que tiene que tener es cobertura por su zona.
@@ -40,7 +41,7 @@ import { dataTerms } from "../../data";
         </div>
         <!-- item -->
         <div>
-            <div class="bg-blue-100 ">
+            <div class="bg-blue-100">
                 <div
                     class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
                 >
@@ -66,7 +67,8 @@ import { dataTerms } from "../../data";
                         <li>
                             Los días de servicio recibido durante el mes de
                             instalación, serán facturados (prorrateados) en el
-                            mes inmediato siguiente a la activación del servicio.
+                            mes inmediato siguiente a la activación del
+                            servicio.
                         </li>
                     </div>
                 </div>
@@ -74,7 +76,7 @@ import { dataTerms } from "../../data";
             <hr />
         </div>
 
-            <!-- <div class="bg-fifth">
+        <!-- <div class="bg-fifth">
                 <div
                     class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
                 >
@@ -101,8 +103,23 @@ import { dataTerms } from "../../data";
                     </div>
                 </div>
             </div> -->
-            <hr />
-        </div> 
+        <hr />
+    </div>
+</div>
+
+<div>
+    <!-- <h2 class="text-xl text-center font-semibold text-sixth/70"></h2> -->
+    <h4  id="pay_method" class="text-3xl sm:text-2xl text-center font-semibold py-4">Medios De Pagos</h4>
+    <p class="text-center">Puedes hacer tus pagos por medio de:</p>
+
+    <div class="flex flex-wrap gap-x-8 gap-y-0 justify-center items-center mb-8">
+        {
+            dataPayMethod.map((method) => (
+                <figure class="">
+                    <img src={method.path} alt=""   class={`${(method.id == 3)  ?'max-w-32 md:max-w-42' :'max-w-48'} max-h-16 md:max-h-28 `}/>
+                </figure>
+            ))
+        }
     </div>
 </div>
 

@@ -114,3 +114,42 @@ const technicalSupportPhone=51947341565
 
 export const LinkWhatsaapCustomer = `https://wa.me/${customerServicePhone}?text=Hola,%20he%20visitado%20su%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20internet%20que%20ofrecen.`
 export const LinkWhatsaapTechnicalSupport = `https://wa.me/${technicalSupportPhone}?text=Hola,%20necesito%20asistencia%20t%C3%A9cnica.%20He%20visitado%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20ayuda%20con%20un%20problema%20que%20estoy%20teniendo.`
+
+
+export const dataPayMethod = [
+    {
+        path:"/imgs/pay_method/logo_yape.png",
+        name:"yape",
+        id:1
+    },
+    {
+        path:"/imgs/pay_method/logo_bcp.png",
+        name:"BCP",
+        id:2
+    },
+    {
+        path:"/imgs/pay_method/logo_bbva.png",
+        name:"BBVA",
+        id:3
+    },
+]
+
+
+export const dataLinkNavbar = [
+    {
+        path:"#planes",
+        title:"Planes"
+    },
+    {
+        path:"#servicios",
+        title:"Servicios"
+    },
+    {
+        path:"#contacto",
+        title:"Contacto"
+    },
+    {
+        path:"#pay_method",
+        title:"Medios de pago"
+    },
+]

@@ -36,7 +36,7 @@ const SwiperSlider = () => {
         // when window width is >= 1024px
         1024: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 20,
         },
       }}
       className="mySwiper "

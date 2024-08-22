@@ -1,3 +1,7 @@
+---
+import { dataLinkNavbar } from "../data";
+---
+
 <div class="w-full h-16 p-4 flex justify-between items-center md:hidden">
     <figure>
         <a href="/">
@@ -17,10 +21,14 @@
             <img src="./imgs/close.svg" alt="">
         </div>
         <nav class="flex flex-col justify-center items-center h-full w-full font-semibold text-2xl">
-            <a href="#servicios" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Servicios</a>
+          <!--   <a href="#servicios" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Servicios</a>
             <a href="#planes" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Planes</a>
             <a href="#contacto" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Contacto</a>
-        </nav>
+            <a href="#pay_method" class="block w-full py-8 text-center hover:bg-secondary hover:text-white">Medio de Pago</a>
+        </nav> -->
+        {dataLinkNavbar.map(link=>(
+             <a href={link.path} class="block w-full py-8 text-center hover:bg-secondary hover:text-white">{link.title}</a>
+        ))}
     </div>
 </div>
 
