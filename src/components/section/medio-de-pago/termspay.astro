@@ -1,0 +1,52 @@
+---
+import {Terms_Pay} from '../../../data/pages/medios-de-pago'
+---
+
+<section class="w-full bg-plata pb-32">
+    <div class="rounded-xl overflow-hidden flex flex-col gap-4 max-w-6xl m-auto">
+        {
+            Terms_Pay.map((term) => {
+                return (
+                    <div>
+                        <div class="flex flex-col gap-y-2">
+                            <div class="term_title flex items-center gap-4 justify-between p-2 px-6 cursor-pointer border-2 rounded-full border-fourth">
+                                <p class="text-base text-cfourth font-medium">
+                                    {term.question}
+                                </p>
+                                <figure class="w-8">
+                                    <img src="/imgs/arrow_down.svg" alt="arrow_down" />
+                                    <img src="/imgs/arrow_up.svg" alt="" class="arrow_up hidden" />
+                                </figure>
+                            </div>
+
+                            <div class="term_description hidden w-full pb-4 px-6">
+                                <div class="text-black/70">
+                                    <li>{term.anwser}</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })
+        }
+
+        <hr />
+    </div>
+</section>
+
+<script>
+    const termTitle = [...document.querySelectorAll(".term_title")];
+    const termDescription = [...document.querySelectorAll(".term_description")];
+
+    termTitle.forEach((title) => {
+        title.addEventListener("click", () => {
+            const nextElement = title.nextElementSibling!;
+            nextElement.classList.toggle("hidden");
+            const imgElement = title.children[1].children[0];
+            const imgElement2 = title.children[1].children[1];
+            imgElement.classList.toggle("hidden");
+            imgElement2.classList.toggle("hidden");
+        });
+    });
+</script>
+    

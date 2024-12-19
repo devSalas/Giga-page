@@ -1,0 +1,1 @@
+import{u as t}from"./base.B4iLwrKF.js";async function s(){const e=localStorage.getItem("token");return e?await(await fetch(`${t}/auth/verify-token`,{method:"POST",headers:{"Content-Type":"application/json",Authorization:`Bearer ${e}`}})).json():!1}export{s as C};

@@ -1,0 +1,62 @@
+---
+import FormContact from "../components/FormContact";
+import TittlePage from "../components/TittlePage.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+
+
+
+<Layout title="Gigamas | contacto">
+    <TittlePage title="NOSOTROS TE CONTACTAMOS" secondTitle=""/>
+    <div class="py-[20px] px-[20px] flex flex-col gap-[40px] sm:px-[70px]  m-auto">
+        
+    
+        <FormContact client:only/>
+        <div class="flex flex-col lg:flex-row lg:items-start lg:gap-8 m-auto  lg:h-[200px]">
+            <!-- Sección CALL CENTER -->
+            <div class="flex flex-col justify-center items-center gap-4 flex-shrink-0 max-w-[220px]">
+                <button class="py-4 px-12 bg-green-500 rounded-xl text-white">
+                    <span>Nuestra área de</span><br />
+                    <span>CALL CENTER</span>
+                </button>
+                <ul class="text-start list-disc list-outside flex flex-col gap-y-4 ">
+                    <li class="">Brindamos atención personalizada</li>
+                    <li>Estamos pendientes 24/7</li>
+                </ul>
+            </div>
+        
+            <!-- Separador Vertical en Pantallas Grandes -->
+            <div class="lg:block w-full h-[2px] lg:w-[2px] lg:h-full bg-secondary my-4 "></div>
+        
+            <!-- Sección VENTAS -->
+            <div class="flex flex-col justify-center items-center gap-4 flex-shrink-0 max-w-[220px]">
+                <button class="py-4 px-12 bg-green-500 rounded-xl text-white">
+                    <span>Nuestra área de</span><br />
+                    <span>VENTAS</span>
+                </button>
+                <ul class="list-outside flex flex-col gap-y-4 list-disc pl-6">
+                    <li class="">Te ayudamos a seleccionar el plan de tu preferencia</li>
+                    <li>Buena atención</li>
+                </ul>
+            </div>
+        
+            <!-- Separador Vertical en Pantallas Grandes -->
+            <div class="lg:block w-full h-[2px] lg:w-[2px] lg:h-full bg-secondary my-4 "></div>
+        
+            <!-- Sección AVERIAS -->
+            <div class="flex flex-col justify-center items-center gap-4 flex-shrink-0 max-w-[220px]">
+                <button class="py-4 px-12 bg-green-500 rounded-xl text-white">
+                    <span>Nuestra área de</span><br />
+                    <span>AVERIAS</span>
+                </button>
+                <ul class="list-outside flex flex-col gap-y-4 list-disc pl-6">
+                    <li>Te ayudamos con el problema técnico que presentes</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+    </div>
+   
+    
+</Layout>

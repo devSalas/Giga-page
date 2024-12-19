@@ -1,0 +1,17 @@
+---
+import CoberturaForm from "../components/CoberturaForm";
+import TittlePage from "../components/TittlePage.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cobertura| GIGAMAS">
+    <TittlePage
+        title="MANDANOS TUS DATOS PARA"
+        secondTitle="SOLICITAR LA COBERTURA"
+    />
+    <div class="px-[20px] py-[60px] sm:px-[30px] sm:py-[50px] lg:p-[100px] bg-plata">
+        <div>
+            <CoberturaForm client:load />
+        </div>
+    </div>
+</Layout>

@@ -1,127 +1,70 @@
 ---
-import { dataTerms } from "../../data";
-import { dataPayMethod } from "../../data";
+import { terms } from "../../data/components/terms";
 ---
 
-<div class="px-4 max-w-7xl m-auto mb-16">
-    <h4 class="text-xs text-center mb-2 text-sixth/70 font-extrabold">
-        TERMINOS Y CONDICIONES
-    </h4>
-    <h2 class="text-3xl sm:text-4xl text-center font-extrabold mb-16">
-        Resuelve Tus Dudas
+<!-- TERMINOS Y CONDICIONES -->
+<div class="px-4 max-w-6xl m-auto md:mb-16">
+    <h2
+        class="text-3xl sm:text-4xl text-csecondary text-center font-extrabold mb-16"
+    >
+        PREGUNTAS FRECUENTES
     </h2>
-    <div class="rounded-xl overflow-hidden">
-        <!-- item -->
-        <div>
-            <div class="bg-blue-100">
-                <div
-                    class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
-                >
-                    <p class="text-base text-black/80 font-medium">
-                        ¿Qué requisitos necesito para que me instalen internet ?
-                    </p>
-                    <figure class="w-8">
-                        <img src="./imgs/arrow_down.svg" alt="arrow_down" />
-                        <img
-                            src="./imgs/arrow_up.svg"
-                            alt=""
-                            class="arrow_up hidden"
-                        />
-                    </figure>
-                </div>
+    <div class="rounded-xl overflow-hidden flex flex-col gap-4">
+        {
+            terms.map((term) => {
+                return (
+                    <div>
+                        <div class="">
+                            <div class="arrow_down term_title flex items-center  gap-4 justify-between p-2 px-6 cursor-pointer  border-2 rounded-2xl border-fourth">
+                                <p class="text-base text-cfourth font-medium">
+                                    {term.question}
+                                </p>
+                                <div class="flex justify-center items-center max-w-[50px]">
+                                    {/* svg- icon - down */}
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="11"
+                                        viewBox="0 0 16 11"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M6.98389 9.74365L0.343263 3.10303C-0.115722 2.64404 -0.115722 1.90186 0.343263 1.44775L1.44678 0.344238C1.90576 -0.114746 2.64795 -0.114746 3.10205 0.344238L7.80908 5.05127L12.5161 0.344238C12.9751 -0.114746 13.7173 -0.114746 14.1714 0.344238L15.2847 1.44287C15.7437 1.90186 15.7437 2.64404 15.2847 3.09814L8.64404 9.73877C8.18506 10.2026 7.44287 10.2026 6.98389 9.74365Z"
+                                            fill="#860526"
+                                        />
+                                    </svg>
+                                    {/* svg- icon - up */}
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="17"
+                                        height="11"
+                                        viewBox="0 0 17 11"
+                                        fill="none"
+                                        class="arrow_down hidden"
+                                    >
+                                        <path
+                                            d="M9.7475 0.362574L16.2407 7.1474C16.6895 7.61635 16.6732 8.35836 16.2044 8.80228L15.0769 9.8813C14.6079 10.3301 13.8659 10.3138 13.422 9.84495L8.81947 5.03571L4.01023 9.63825C3.54127 10.087 2.79927 10.0708 2.35535 9.60191L1.26646 8.4791C0.817665 8.01015 0.833961 7.26814 1.3028 6.82422L8.08763 0.331005C8.55669 -0.122673 9.2987 -0.106378 9.7475 0.362574Z"
+                                            fill="#860526"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
 
-                <div class="term_description hidden w-full pb-4 px-6">
-                    <div class="text-black/70">
-                        Lo único que tiene que tener es cobertura por su zona.
-                        Nosotros nos encargamos de lo demás.
+                            <div class="term_description hidden w-full pb-4 px-6 py-4">
+                                <ul class="text-black/70 list-none">
+                                    <li class="">{term.anwser}</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <hr />
-        </div>
-        <!-- item -->
-        <div>
-            <div class="bg-blue-100">
-                <div
-                    class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
-                >
-                    <p class="text-base text-black/80 font-medium">
-                        ¿Como funciona el proceso de pago ?
-                    </p>
-                    <figure class="w-8">
-                        <img src="./imgs/arrow_down.svg" alt="arrow_down" />
-                        <img
-                            src="./imgs/arrow_up.svg"
-                            alt=""
-                            class="arrow_up hidden"
-                        />
-                    </figure>
-                </div>
+                );
+            })
+        }
 
-                <div class="term_description hidden w-full pb-4 px-6">
-                    <div class="text-black/70">
-                        <li>
-                            La facturación de tu servicio es mensual y la
-                            modalidad de pago es: mes vencido.
-                        </li>
-                        <li>
-                            Los días de servicio recibido durante el mes de
-                            instalación, serán facturados (prorrateados) en el
-                            mes inmediato siguiente a la activación del
-                            servicio.
-                        </li>
-                    </div>
-                </div>
-            </div>
-            <hr />
-        </div>
-
-        <!-- <div class="bg-fifth">
-                <div
-                    class="term_title flex items-center gap-4 justify-between p-6 cursor-pointer"
-                >
-                    <p class="text-base text-black/80 font-medium">
-                        ¿Qué requisitos necesito para que me instalen internet ?
-                    </p>
-                    <figure class="w-8">
-                        <img src="./imgs/arrow_down.svg" alt="arrow_down" />
-                        <img
-                            src="./imgs/arrow_up.svg"
-                            alt=""
-                            class="arrow_up hidden"
-                        />
-                    </figure>
-                </div>
-
-                <div class="term_description hidden w-full pb-4 px-6">
-                    <div class="text-black/70">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Reprehenderit, aperiam, necessitatibus pariatur
-                        incidunt molestias molestiae nesciunt adipisci debitis
-                        eligendi qui maiores laboriosam omnis ipsam repudiandae
-                        doloribus. Saepe ea quo minima!
-                    </div>
-                </div>
-            </div> -->
         <hr />
     </div>
 </div>
 
-<div>
-    <!-- <h2 class="text-xl text-center font-semibold text-sixth/70"></h2> -->
-    <h4  id="pay_method" class="text-3xl sm:text-2xl text-center font-semibold py-4">Medios De Pagos</h4>
-    <p class="text-center">Puedes hacer tus pagos por medio de:</p>
-
-    <div class="flex flex-wrap gap-x-8 gap-y-0 justify-center items-center mb-8">
-        {
-            dataPayMethod.map((method) => (
-                <figure class="">
-                    <img src={method.path} alt=""   class={`${(method.id == 3)  ?'max-w-32 md:max-w-42' :'max-w-48'} max-h-16 md:max-h-28 `}/>
-                </figure>
-            ))
-        }
-    </div>
-</div>
 
 <script>
     const termTitle = document.querySelectorAll(".term_title");

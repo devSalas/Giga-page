@@ -1,0 +1,16 @@
+---
+interface Props{
+    title:string;
+    secondTitle:string;
+}
+
+
+const {title,secondTitle} =Astro.props
+
+---
+
+<div class="bg-custom-gradient-global py-4 sm:p-6 lg:py-9 px-[12px] text-white flex flex-col">
+    <h2 class="text-center font-bold text-xl sm:text-2xl lg:text-[36px] lg:leading-[30px] ">{title} </h2>
+    <h2 class="text-center font-bold text-xl sm:text-2xl lg:text-[36px] lg:leading-[30px]  m-0 p-0">{secondTitle} </h2>
+
+</div>

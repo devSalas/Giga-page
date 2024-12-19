@@ -19,60 +19,52 @@ export const dataBanner = [
 
 export const dataBenefits = [
     {
-        img: "./imgs/performance.png",
-        title: "Velocidad superior",
-        text: "Disfruta de una navegación ultrarrápida y sin interrupciones gracias a nuestra avanzada tecnología de fibra óptica. ",
+        img: "./imgs/section/benefit/instalacion.png",
+        title: "Instalación Rápida",
+        text: "No demoramos más de 24 horas en realizar una instalación.",
     },
     {
-        img: "./imgs/support.png",
-        title: "Atención al Cliente Excepcional",
-        text: "Estamos aquí para ti. Nuestro equipo de soporte está listo para ayudarte con cualquier consulta o problema de manera rápida y eficiente.",
+        img: "./imgs/section/benefit/conectividad.png",
+        title: "Mayor Conectividad",
+        text: "Puede conectarse a internet desde varios dispositivos",
     },
     {
-        img: "./imgs/router.png",
-        title: "Conexión Estable",
-        text: "Disfruta de Olvídate de las caídas y fluctuaciones. Te garantizamos una conexión constante y fiable para todas tus actividades en línea.",
+        img: "./imgs/section/benefit/simetria.png",
+        title: "Velocidad Simétrica",
+        text: "Obtendrás la misma velocidad de subida y de bajada.",
     },
     {
-        img: "./imgs/laptop.png",
-        title: "Mayor Ancho de Banda",
-        text: "Estamos aquí para ti. Conecta todos tus dispositivos sin perder rendimiento, ideal para videollamadas, streaming y juegos en línea."
+        img: "./imgs/section/benefit/seguridad.png",
+        title: "Más Seguridad",
+        text: "Te garantizamos seguridad en la nube"
     }
 ]
 
 export const dataPlans = [
     {
-        megasBefore: 40,
-        megasNow: 80,
-        price: 50,
-    },
-    {
-        megasBefore: 50,
-        megasNow: 100,
-        price: 60,
-    },
-    {
-        megasBefore: 70,
-        megasNow: 140,
-        price: 80,
-    },
-    {
         megasBefore: 100,
         megasNow: 200,
-        price: 99.0,
+        price: 65,
     },
+    {
+        megasBefore: 150,
+        megasNow: 250,
+        price: 75,
+    },
+    {
+        megasBefore: 200,
+        megasNow: 400,
+        price: 95,
+    },
+    {
+        megasBefore: 300,
+        megasNow: 500,
+        price: 114,
+    },
+
 ]
 
-export const dataTerms = [
-    {
-        title: "hola",
-        description: "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
-    },
-    {
-        title: "hola",
-        description: "lodsdsdsds"
-    },
-]
+
 
 
 export const dataFooter = {
@@ -113,6 +105,7 @@ const customerServicePhone =51977876630
 const technicalSupportPhone=51947341565
 
 export const LinkWhatsaapCustomer = `https://wa.me/${customerServicePhone}?text=Hola,%20he%20visitado%20su%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20internet%20que%20ofrecen.`
+export const LinkWhatsaapCustomerCamera = `https://wa.me/${customerServicePhone}?text=Hola,%20he%20visitado%20su%20p%C3%A1gina%20web%20y%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20las%20c%C3%A1maras%20que%20ofrecen.`
 export const LinkWhatsaapTechnicalSupport = `https://wa.me/${technicalSupportPhone}?text=Hola,%20necesito%20asistencia%20t%C3%A9cnica.%20He%20visitado%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20ayuda%20con%20un%20problema%20que%20estoy%20teniendo.`
 
 
@@ -137,19 +130,37 @@ export const dataPayMethod = [
 
 export const dataLinkNavbar = [
     {
-        path:"#planes",
-        title:"Planes"
+        path:"/",
+        title:"INICIO"
     },
     {
-        path:"#servicios",
-        title:"Servicios"
+        path:"/about",
+        title:"NOSOTROS"
     },
     {
-        path:"#contacto",
-        title:"Contacto"
+        path:"/planes",
+        title:"PLANES"
     },
     {
-        path:"#pay_method",
-        title:"Medios de pago"
+        path:"/medios-de-pago",
+        title:"MEDIOS DE PAGO"
     },
+    {
+        path:"/contacto",
+        title:"CONTACTO"
+    },
+]
+
+
+export const sliderInfo = [
+    {
+        description:"Consulta tu",
+        wordMain:"Cobertura",
+        url:"/cobertura",
+    }, 
+    {
+        description:"Consulta nuestras",
+        wordMain:"Promociones",
+        url:"/promociones",
+    }
 ]

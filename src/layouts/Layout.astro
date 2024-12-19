@@ -1,4 +1,11 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import NavbarTypeBusiness from '../components/NavbarTypeBusiness.astro';
+import Footer from '../components/section/Footer.astro';
+import Header from '../components/section/Header.astro';
+import WhatsAppWidget from '../components/BottomWhatsapp.tsx';
+
+
 interface Props {
 	title: string;
 }
@@ -31,12 +38,28 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/ico" href="imgs/favicon_gigamas.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<ViewTransitions/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+
 	</head>
-	<body>
+	<body class="">
+	
+		<NavbarTypeBusiness  />
+		<Header />
 		<slot />
+		<Footer/>
+		<WhatsAppWidget client:only="react"/>
 	</body>
 </html>
 <style is:global>
@@ -46,17 +69,9 @@ const { title } = Astro.props;
 	}
 	body {
 		width: 100%;
-		font-family: "Lato", sans-serif;
+		font-family: "Rubik", sans-serif;
 	}
 	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+		font-family: "Rubik", sans-serif;
 	}
 </style>

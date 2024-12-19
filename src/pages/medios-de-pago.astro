@@ -1,0 +1,15 @@
+---
+import StepToPay from "../components/section/medio-de-pago/step-to-pay.tsx";
+import Layout from "../layouts/Layout.astro";
+
+import TittlePage from "../components/TittlePage.astro";
+import Termspay from "../components/section/medio-de-pago/termspay.astro";
+
+
+---
+
+<Layout title="Gigamas | Medio de pago">
+    <TittlePage title="MEDIOS DE PAGO" secondTitle="" />
+    <StepToPay client:load/>
+    <Termspay />
+</Layout>

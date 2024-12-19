@@ -2,22 +2,25 @@
 import SwiperSlider from "../SwiperSliders";
 ---
 
-<div class="max-w-7xl m-auto p-5  lg:px-5 lg:py-16 mb-8" id="planes">
-    <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
+<div class="max-w-7xl m-auto p-5  lg:px-5 lg:py-16 " id="planes">
+   <!--  <h4 class="text-base text-center mb-2 text-sixth/70 font-extrabold">
         TU MEJOR OPCIÓN EN CONECTIVIDAD
-    </h4>
+    </h4> -->
 
     <h2 class="text-3xl  sm:text-4xl text-center font-extrabold mb-4">
-        Los Mejores Planes Para Nuestros Clientes
+       <span class="text-csecondary"> SIN COSTO DE INSTALACIÓN </span> <br> <span class="text-cfourth">EN TODOS NUESTROS PLANES</span>  
+       
     </h2>
-    <p class="mb-8 md:mb-16 max-w-lg text-center m-auto">
-        Ofrecemos una variedad de opciones diseñadas para adaptarse a todas tus
-        necesidades, desde navegación básica hasta streaming y juegos en línea.
-    </p>
+
+    <div class="flex justify-center gap-4 my-16 text-xl">
+       <p>Planes Internet 100% <strong>FIBRA OPTICA</strong></p> <p>|</p>
+       <p>Planes DÚO <strong>(INTERNET + CABLE TV)</strong> </p>
+    </div>
+ 
     <SwiperSlider client:load />
-    <p class="text-xs font-medium text-sixth">
+    <!-- <p class="text-xs font-medium text-sixth">
         NOTA: Esta promoción es valida por 1 año para los nuevas instalaciónes.
         Para las instalaciones fuera de lima la instalaciones se cobrarán previa
         revision.
-    </p>
+    </p> -->
 </div>

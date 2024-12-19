@@ -2,81 +2,51 @@
 import Layout from "../layouts/Layout.astro";
 import Benefits from "../components/section/Benefits.astro";
 import Plans from "../components/section/Plans.astro";
-import Service from "../components/section/Service.astro";
-import Location from "../components/section/Location.astro";
 import Terms from "../components/section/Terms.astro";
-import Footer from "../components/section/Footer.astro";
-import BottomWhatsapp from "../components/BottomWhatsapp.astro";
-import SwiperSliderHero  from "../components/SwiperSlidersHero";
-import Form from "../components/Form"
-import NavbarMobile from "../components/NavbarMobile.astro";
-import { dataLinkNavbar, LinkWhatsaapCustomer} from "../data";
+import SwiperSliderHero from "../components/SwiperSlidersHero";
+import Form from "../components/Form";
+import ExtraCard from "../components/section/ExtraCard.astro";
+import SwiperSliderInfo from "../components/section/SwiperSliderInfo";
+
+
 ---
 
 <Layout title="Gigamas,el internet que te da mas.">
 	<main class="">
-		<!-- type bussines -->
-		<!-- <div class="w-full flex justify-end max-w-7xl m-auto">
-			<div class="rounded-b-lg overflow-hidden flex">
-				<a href="" class="inline-block bg-fourth px-6 py-1 text-cprimary">Hogar</a>
-				<a href="" class="px-4 py-1 text-black bg-slate-100">Corporación</a>
-			</div>
-		</div> -->
-		<!-- header -->
-		<div class="py-2 md:py-8">
-			<!-- desktop -->
-			<div
-				class="hidden w-full md:flex md:px-5 2xl:px-0 justify-between items-center max-w-7xl m-auto"
+
+		<div class="w-full aspect-[3/4] sm:aspect-[3.42/1]">
+			<SwiperSliderHero client:only="react" />
+		</div>
+
+		<!-- SLIDER ABOVE MAIN -->
+
+		<div
+			class="flex flex-col justify-center gap-8 bg-custom-gradient-global text-cprimary py-4"
+		>
+			<p
+				class="text-2xl text-center font-bold md:text-3xl rounded-xl font-regular"
 			>
-				<figure>
-					<a href="/">
-						<img src="./imgs/gigamas_logo.png" alt="" class="w-32" />
-					</a>
-				</figure>
-				<nav class="flex gap-8">
-					<!-- <a href="#planes" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold  hover:md:text-secondary">Planes</a>
-					<a href="#contacto" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Contacto</a>
-					<a href="#servicios" class="font-medium transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">Servicios</a> -->
-					{
-						dataLinkNavbar.map(link=>(
-						<a href={link.path} class=" text-lg font-bold text-fourth/70 transition-all hover:scale-105 duration-100 hover:md:font-bold hover:md:text-secondary">{link.title}</a>
-						))
-					}
-				</nav>
-				<a target="_blank"
-				href={LinkWhatsaapCustomer} class="bg-fourth p-2 px-8 py-3 font-bold text-cprimary rounded-full transition-all hover:scale-105 duration-100">
-					CONTACTAR AHORA
-				</a>
+				¿Eres nuevo en <strong>GIGAMAS</strong>?
+			</p>
+			<div>
+				<SwiperSliderInfo client:load />
 			</div>
-			<!-- Mobile -->
-			<NavbarMobile/>
 		</div>
-		<!-- slider -->
-		<div class="w-full   ">
-			<!-- <img src="bg_prueba.webp" alt="" /> -->
-			<SwiperSliderHero client:load/>
-			<!-- <section class="sowertec-section  bg-secondary ">
-
-				<img src="./imgs/banner_fiesta_patrias.webp" class="object-cover lg:w-full h-[397px] lg:h-auto sm:object-cover sm:h-auto " alt="">
-			</section> -->
-		</div>
-		<!-- form  -->
-		<Form client:load/>
-		
-
-
 	</main>
 
 	<div>
-		<Benefits />
-		<Plans />
-		<div class="w-full shadow-sm ">
-			<Service />
+		<div class="bg-plata bg-cover py-8">
+			<Plans />
 		</div>
-		<Location />
-		<Terms />
-		<Footer />
+		<div class="bg-plata  bg-cover ">
+			<Benefits />
+			<ExtraCard />
+			<Terms />
+			<Form client:idle />
+		</div>
 	</div>
-	 <BottomWhatsapp></BottomWhatsapp>
-	<style></style>
+	
+	   
+
 </Layout>
+

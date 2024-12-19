@@ -1,0 +1,64 @@
+---
+import { medios_de_pago } from "../../../data/pages/medios-de-pago";
+
+
+---
+
+<section class="p-16 bg-plata">
+    <h2 class="text-center text-4xl font-bold">
+        <span class="text-fourth">SELECCIONA TU MÉTODO DE PAGO</span><br />
+        <span class="text-secondary">Y TE ENSEÑAMOS A COMO PAGAR TU SERVICIO</span>
+    </h2>
+    <article>
+        <div id="contenedor-pagos" class="flex justify-center gap-8 max-w-6xl m-auto p-16">
+            {medios_de_pago.map((medios) => {
+                return (
+                    <div
+                        data-pay={medios.name}
+                        class="method-pay p-12 rounded-2xl bg-primary aspect-square flex justify-center items-center relative hover:bg-custom-gradient-global duration-300"
+                    >
+                        <img src={medios.url} alt={medios.name} />
+                        <div class="bg-secondary text-white absolute bottom-0 pt-1 px-2 inline-block rounded-t-lg">
+                            COMO PAGAR
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    </article>
+
+    <!-- Este artículo se va a mostrar y ocultar -->
+    <article></article>
+</section>
+
+<script>
+    // Asegurarse de que el código solo se ejecute después de que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        const contenedorPagos = document.getElementById('contenedor-pagos');
+        
+        if (contenedorPagos) {
+            contenedorPagos.addEventListener('click', function(e) {
+                let targetElement = e.target as HTMLElement ;
+                
+                // Aseguramos que targetElement es un HTMLElement
+                if (targetElement instanceof HTMLFormElement) {
+                    // Busca el ancestro más cercano con el atributo data-pay
+                    while (targetElement !== null && !targetElement.hasAttribute('data-pay')) {
+                        targetElement = targetElement.parentElement!;
+                    }
+                    
+                    // Si encontramos un elemento con data-pay, mostramos su valor
+                    if (targetElement && targetElement.hasAttribute('data-pay')) {
+                        const payMethod = targetElement.getAttribute('data-pay');
+                        console.log(`Método de pago seleccionado: ${payMethod}`);
+                        // Aquí puedes añadir cualquier acción que desees realizar
+                    }
+                } else {
+                    console.error('El target del evento no es un HTMLElement.');
+                }
+            });
+        } else {
+            console.log('El contenedor de pagos no se encontró.');
+        }
+    });
+</script>

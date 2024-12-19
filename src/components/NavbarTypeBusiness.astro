@@ -1,0 +1,87 @@
+---
+import { TypeBusiness } from "../data/typeBusiness";
+---
+
+<div class="w-full bg-fourth text-white text-sm h-[36px]">
+    <div class="max-w-7xl m-auto flex justify-between h-full" >
+        <nav class="flex gap-4  sm:gap-8 text-[10px] md:text-sm  p-2">
+            {
+                TypeBusiness.map((business) => (
+                    <a
+                        href={business.redirect}
+                        class="flex gap-1 justify-center items-center"
+                    >
+                        <img src={business.image} alt="" class="h-[20px]" />{" "}
+                        {business.name}
+                    </a>
+                ))
+            }
+        </nav>
+        <nav class="hidden md:flex md:justify-center md:items-center gap-8 text-sm">
+            <a
+                href="https://www.facebook.com/Gigamas.pe"
+                target="_blank"
+                class="m-auto"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    class="fill-primary hover:fill-secondary"
+                    ><path
+                        d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+                    ></path></svg
+                >
+            </a>
+            <a
+                href="https://www.instagram.com/gigamas.pe/"
+                target="_blank"
+                class="m-auto"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    ><g
+                        fill="none"
+                        class="stroke-primary hover:stroke-secondary"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        color="black"
+                        ><path
+                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                        ></path><path
+                            d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01"
+                        ></path></g
+                    ></svg
+                >
+            </a>
+            <a
+                href="https://www.tiktok.com/@gigamas.pe"
+                target="_blank"
+                class="m-auto"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24 "
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-primary hover:fill-secondary"
+                    ><path
+                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02c.08 1.53.63 3.09 1.75 4.17c1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97c-.57-.26-1.1-.59-1.62-.93c-.01 2.92.01 5.84-.02 8.75c-.08 1.4-.54 2.79-1.35 3.94c-1.31 1.92-3.58 3.17-5.91 3.21c-1.43.08-2.86-.31-4.08-1.03c-2.02-1.19-3.44-3.37-3.65-5.71c-.02-.5-.03-1-.01-1.49c.18-1.9 1.12-3.72 2.58-4.96c1.66-1.44 3.98-2.13 6.15-1.72c.02 1.48-.04 2.96-.04 4.44c-.99-.32-2.15-.23-3.02.37c-.63.41-1.11 1.04-1.36 1.75c-.21.51-.15 1.07-.14 1.61c.24 1.64 1.82 3.02 3.5 2.87c1.12-.01 2.19-.66 2.77-1.61c.19-.33.4-.67.41-1.06c.1-1.79.06-3.57.07-5.36c.01-4.03-.01-8.05.02-12.07"
+                    ></path></svg
+                >
+            </a>
+        </nav>
+
+        <button
+            class="md:hidden bg-call_bottom text-white flex justify-center items-center h-full gap-2 sm:gap-4 py-1  px-4 sm:px-6 rounded-l-full"
+        >
+            <img src="/imgs/phone.png" alt="" class="w-4" />
+            <span class="text-[14px]  font-semibold"> (01) 4801475 </span>
+        </button>
+    </div>
+</div>

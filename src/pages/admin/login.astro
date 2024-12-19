@@ -1,0 +1,11 @@
+---
+import { AuthLogin } from "../../components/AuthLogin";
+import LayoutAdmin from "../../layouts/LayoutAdmin.astro";
+
+---
+
+<LayoutAdmin title="Login">
+    <div class="bg-secondary w-full min-h-screen flex justify-center items-center">
+        <AuthLogin client:only="react"/>
+    </div>
+</LayoutAdmin>
