@@ -200,9 +200,9 @@ const { social_media, logo } = dataFooter;
                 <div class="flex flex-col pt-4">
                     {
                         information.map((data) => (
-                            <span  class="">
+                            <a href={data.url}  class="">
                                 {data.name}
-                            </span>
+                            </a>
                         ))
                     }
                 </div>
