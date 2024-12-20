@@ -22,9 +22,9 @@ function Slider({ price, megasBefore, megasNow }: Props) {
                     <span className="text-xs font-bold">Más de <br />
                         50 canales</span>
                 </figure>
-                <img src="imgs/plans/plus.png" alt="" />
+                <img src="/imgs/plans/plus.png" alt="" />
                 <figure>
-                    <img src="imgs/plans/router.png" alt="" className="w-[70px]"/>
+                    <img src="/imgs/plans/router.png" alt="" className="w-[70px]"/>
                     <span className="text-xs font-bold">Router de <br />
                         doble banda</span>
                 </figure>
