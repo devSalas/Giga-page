@@ -2,11 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Benefits from "../components/section/Benefits.astro";
 import Plans from "../components/section/Plans.astro";
-import Terms from "../components/section/Terms.astro";
+import Terms from "../components/section/Terms";
 import SwiperSliderHero from "../components/SwiperSlidersHero";
 import Form from "../components/Form";
 import ExtraCard from "../components/section/ExtraCard.astro";
 import SwiperSliderInfo from "../components/section/SwiperSliderInfo";
+import Dropdown from "../components/section/Terms";
 
 
 ---
@@ -41,7 +42,7 @@ import SwiperSliderInfo from "../components/section/SwiperSliderInfo";
 		<div class="bg-plata  bg-cover ">
 			<Benefits />
 			<ExtraCard />
-			<Terms />
+			<Dropdown client:only="react" />
 			<Form client:idle />
 		</div>
 	</div>

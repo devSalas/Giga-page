@@ -1,1 +1,0 @@
-import"./hoisted.DZL4CV8D.js";const l=[...document.querySelectorAll(".term_title")];[...document.querySelectorAll(".term_description")];l.forEach(e=>{e.addEventListener("click",()=>{e.nextElementSibling.classList.toggle("hidden");const t=e.children[1].children[0],n=e.children[1].children[1];t.classList.toggle("hidden"),n.classList.toggle("hidden")})});
