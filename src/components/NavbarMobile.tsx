@@ -14,14 +14,14 @@ const NavbarMobile = () => {
       <figure>
         <img
           id="btnOpenModal"
-          src="./imgs/menu.svg"
+          src="/imgs/menu.svg"
           alt="Abrir menú"
           onClick={toggleNavbar}
         />
       </figure>
       <figure>
         <a href="/">
-          <img src="./imgs/gigamas_logo.png" alt="Logo" className="w-16" />
+          <img src="/imgs/gigamas_logo.png" alt="Logo" className="w-16" />
         </a>
       </figure>
 
@@ -33,11 +33,11 @@ const NavbarMobile = () => {
         <div id="closeModal" className="fixed w-full flex justify-between p-4">
           <figure>
             <a href="/">
-              <img src="./imgs/gigamas_logo.png" alt="Logo" className="w-32" />
+              <img src="/imgs/gigamas_logo.png" alt="Logo" className="w-32" />
             </a>
           </figure>
           <img
-            src="./imgs/close.svg"
+            src="/imgs/close.svg"
             alt="Cerrar"
             onClick={toggleNavbar}
           />

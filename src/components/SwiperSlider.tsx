@@ -18,7 +18,7 @@ function Slider({ price, megasBefore, megasNow }: Props) {
 
             <div className="flex justify-center items-center gap-4 mb-2">
                 <figure>
-                    <img src="imgs/plans/tv.png" alt="" className="w-[70px]" />
+                    <img src="/imgs/plans/tv.png" alt="" className="w-[70px]" />
                     <span className="text-xs font-bold">Más de <br />
                         50 canales</span>
                 </figure>

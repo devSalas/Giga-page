@@ -7,7 +7,7 @@ const NavbarDesktop = () => {
       <div className="hidden lg:flex md:px-4 md:py-2 justify-between items-center max-w-7xl m-auto">
         <figure className="self-center place-self-center">
           <a href="/">
-            <img src="./imgs/gigamas_logo.png" alt="" className="md:w-24" />
+            <img src="/imgs/gigamas_logo.png" alt="" className="md:w-24" />
           </a>
         </figure>
         <nav className="flex sm:gap-4 lg:gap-8">

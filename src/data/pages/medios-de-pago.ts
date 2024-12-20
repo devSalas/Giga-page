@@ -1,15 +1,15 @@
 export const medios_de_pago = [
     {
         name: "BCP",
-        url: "imgs/bank/BCP.png"
+        url: "/imgs/bank/BCP.png"
     },
     {
         name: "YAPE",
-        url: "imgs/bank/YAPE.png"
+        url: "/imgs/bank/YAPE.png"
     },
     {
         name: "BBVA",
-        url: "imgs/bank/BBVA.png"
+        url: "/imgs/bank/BBVA.png"
     },
 ]
 
@@ -21,57 +21,57 @@ interface Bank_details {
 
 export const BBVA_details: Bank_details[] = [
     {
-        image: "imgs/pages/payment-method/BBVA/phone_bbva_step_1.png",
+        image: "/imgs/pages/payment-method/BBVA/phone_bbva_step_1.png",
         description: "Debemos entrar a la app, ir a transferencias"
     },
     {
-        image: "imgs/pages/payment-method/BBVA/phone_bbva_step_2.png",
+        image: "/imgs/pages/payment-method/BBVA/phone_bbva_step_2.png",
         description: "Colocamos el número de cuenta de GIGAMAS y le damos buscar."
     },
     {
-        image: "imgs/pages/payment-method/BBVA/phone_bbva_step_3.png",
+        image: "/imgs/pages/payment-method/BBVA/phone_bbva_step_3.png",
         description: "Colocamos el monto correspondiente para el deposito y le damos continuar, al realizar el deposito tomamos una captura de pantalla."
     },
     {
-        image: "imgs/pages/payment-method/BBVA/phone_bbva_step_4.png",
+        image: "/imgs/pages/payment-method/BBVA/phone_bbva_step_4.png",
         description: "Enviar la captura de pantalla mediante WhatsApp al número de GIGAMAS, indicando que se realizo el depósito"
     },
 
 ]
 export const YAPE_details: Bank_details[] = [
     {
-        image: "imgs/pages/payment-method/YAPE/phone_yape_step_1.png",
+        image: "/imgs/pages/payment-method/YAPE/phone_yape_step_1.png",
         description: "Debemos entrar a la app, al darle “Yapear”, debemos colocar el número de GIGAMAS."
     },
     {
-        image: "imgs/pages/payment-method/YAPE/phone_yape_step_2.png",
+        image: "/imgs/pages/payment-method/YAPE/phone_yape_step_2.png",
         description: "Colocamos el monto a pagar de nuestro servicio."
     },
     {
-        image: "imgs/pages/payment-method/YAPE/phone_yape_step_3.png",
+        image: "/imgs/pages/payment-method/YAPE/phone_yape_step_3.png",
         description: "Yapear el monto correspondiente y tomarle una captura de pantalla."
     },
     {
-        image: "imgs/pages/payment-method/YAPE/phone_yape_step_4.png",
+        image: "/imgs/pages/payment-method/YAPE/phone_yape_step_4.png",
         description: "Enviar la captura de pantalla mediante WhatsApp al número de GIGAMAS, indicando que se realizo el depósito"
     },
 
 ]
 export const BCP_details: Bank_details[] = [
     {
-        image: "imgs/pages/payment-method/BCP/phone_bcp_step_1.png",
+        image: "/imgs/pages/payment-method/BCP/phone_bcp_step_1.png",
         description: "Debemos entrar a la app, ir a “Operaciones” ahi presionamos transferir dinero."
     },
     {
-        image: "imgs/pages/payment-method/BCP/phone_bcp_step_2.png",
+        image: "/imgs/pages/payment-method/BCP/phone_bcp_step_2.png",
         description: "Colocamos el número de cuenta de GIGAMAS y le damos continuar."
     },
     {
-        image: "imgs/pages/payment-method/BCP/phone_bcp_step_3.png",
+        image: "/imgs/pages/payment-method/BCP/phone_bcp_step_3.png",
         description: "Colocamos el monto correspondiente para el deposito y le damos continuar, al realizar el deposito tomamos una captura de pantalla."
     },
     {
-        image: "imgs/pages/payment-method/BCP/phone_bcp_step_4.png",
+        image: "/imgs/pages/payment-method/BCP/phone_bcp_step_4.png",
         description: "Enviar la captura de pantalla mediante WhatsApp al número de GIGAMAS, indicando que se realizo el depósito"
     },
 
