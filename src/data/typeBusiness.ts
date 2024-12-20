@@ -1,7 +1,7 @@
 export const TypeBusiness = [
     {
         name:"Hogar",
-        image:"imgs/type_business/home.png",
+        image:"/imgs/type_business/home.png",
         redirect:"/"
     }/* ,
     {
