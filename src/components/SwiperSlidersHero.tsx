@@ -1,13 +1,13 @@
 // Importaciones necesarias de React y Swiper
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import SwiperCore from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-import Slider from './SwiperSlider'
-import { dataBanner, dataPlans } from '../data';
+import { dataBanner } from '../data';
 
-// Instalar módulos necesarios de Swiper
+
+
+
 SwiperCore.use([Pagination, Navigation]);
 
 const SwiperSliderHero = () => {
@@ -16,6 +16,7 @@ const SwiperSliderHero = () => {
     <Swiper
       direction="horizontal" // Puedes cambiar a 'vertical' si lo prefieres
       loop={true}
+
       slidesPerView={3}
       pagination={{ clickable: true }}
       navigation={{
@@ -55,7 +56,7 @@ const SwiperSliderHero = () => {
             <picture className='w-full'>
               <source srcSet={banner.img_mobile} media="(max-width: 767px)" />
               <source srcSet={banner.img} media="(min-width: 768px)" />
-              <img src={banner.img} className='select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto' />
+              <img src={banner.img}  className='select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto' />
             </picture>
 
 

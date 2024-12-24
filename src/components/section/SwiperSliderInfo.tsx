@@ -53,8 +53,8 @@ export default () => {
                 Consulta tu <br /><span className="text-cfourth font-extrabold"
                 >Cobertura </span>
               </p>
-              <a href='/cobertura' 
-                className="bg-secondary py-2 px-6 text-cprimary rounded-full hover:bg-custom-gradient-global"
+              <a href='/cobertura'  
+                className="bg-secondary py-2 px-6 text-cprimary rounded-full hover:bg-custom-gradient-global "
               >
                 Aqui
               </a>
