@@ -30,7 +30,7 @@ import Dropdown from "../components/section/Terms";
 				¿Eres nuevo en <strong>GIGAMAS</strong>?
 			</p>
 			<div>
-				<SwiperSliderInfo client:load />
+				<SwiperSliderInfo client:visible />
 			</div>
 		</div>
 	</main>
@@ -42,8 +42,8 @@ import Dropdown from "../components/section/Terms";
 		<div class="bg-plata  bg-cover ">
 			<Benefits />
 			<ExtraCard />
-			<Dropdown client:only="react" />
-			<Form client:idle />
+			<Dropdown client:visible />
+			<Form client:visible />
 		</div>
 	</div>
 	

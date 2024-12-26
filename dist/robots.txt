@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /descargar
-Disallow: /clientes
-
-Disallow: /admin/
-
-

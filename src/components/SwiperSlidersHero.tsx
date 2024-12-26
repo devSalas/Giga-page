@@ -1,5 +1,5 @@
 // Importaciones necesarias de React y Swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import SwiperCore from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -16,7 +16,7 @@ const SwiperSliderHero = () => {
     <Swiper
       direction="horizontal" // Puedes cambiar a 'vertical' si lo prefieres
       loop={true}
-
+      
       slidesPerView={3}
       pagination={{ clickable: true }}
       navigation={{
