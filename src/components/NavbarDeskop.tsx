@@ -21,9 +21,9 @@ const NavbarDesktop = () => {
             </a>
           ))}
         </nav>
-        <button className="bg-call_bottom text-white flex gap-4 md:p-2 lg:p-3 lg:px-6 md:px-6 rounded-2xl cursor-default">
-          <img src="/imgs/phone.png" alt="Phone" />
-          <span className="text-base">(01) 4801475</span>
+        <button className="bg-call_bottom text-white flex justify-center items-center gap-4 md:p-2 lg:p-3 lg:px-6 md:px-6 rounded-2xl cursor-default">
+          <img src="/imgs/phone.png" alt="Phone" className='max-w-5' />
+          <span className="text-lg">(01) 4801475</span>
         </button>
       </div>
     </div>
