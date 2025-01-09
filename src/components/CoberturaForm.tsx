@@ -4,15 +4,15 @@ import { urlbase } from "../api/base";
 
 // Datos mock
 const provincias = [
-    { value: "lima", name: "Lima" },
-    { value: "canete", name: "Cañete" }
+    { value: "1", name: "Lima" },
+    { value: "2", name: "Cañete" }
 ];
 
 const distritos = [
-    { value: 1, name: "Villa Maria del triunfo", provincia: "lima" },
-    { value: 2, name: "San Juan de Miraflores", provincia: "lima" },
-    { value: 3, name: "Surco", provincia: "lima" },
-    { value: 4, name: "Lunahuaná", provincia: "canete" },
+    { value: 1, name: "Villa Maria del triunfo", provincia: "1"},
+    { value: 2, name: "San Juan de Miraflores", provincia: "1" },
+    { value: 3, name: "Surco", provincia: "1" },
+    { value: 4, name: "Lunahuaná", provincia: "2"},
 
 ];
 
@@ -42,6 +42,7 @@ function CoberturaForm() {
 
     useEffect(() => {
         if (formData.provincia) {
+          
             const distritosProvicia = distritos.filter(
                 distrito => distrito.provincia === formData.provincia
             );
