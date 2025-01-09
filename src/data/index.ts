@@ -1,8 +1,9 @@
 export const dataBanner = [
     {
         img:"imgs/banner/banner_1_gigamas.webp",
+        img_tablet:"imgs/banner/banner_1_gigamas_t.webp",
         img_mobile:"imgs/banner/banner_1_gigamas_m.webp"
-    },
+    }/* ,
     {
         img:"imgs/banner/banner_2_gigamas.webp",
         img_mobile:"imgs/banner/banner_2_gigamas_m.webp"
@@ -14,7 +15,7 @@ export const dataBanner = [
     {
         img:"imgs/banner/banner_4_gigamas.webp",
         img_mobile:"imgs/banner/banner_4_gigamas_m.webp"
-    },
+    }, */
 ]
 
 export const dataBenefits = [
@@ -63,8 +64,6 @@ export const dataPlans = [
     },
 
 ]
-
-
 
 
 export const dataFooter = {

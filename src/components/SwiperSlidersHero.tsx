@@ -54,9 +54,10 @@ const SwiperSliderHero = () => {
 
 
             <picture className='w-full'>
-              <source srcSet={banner.img_mobile} media="(max-width: 767px)" />
-              <source srcSet={banner.img} media="(min-width: 768px)" />
-              <img src={banner.img}  className='select-none object-cover w-full  lg:h-auto sm:object-cover sm:h-auto' />
+              <source srcSet={banner.img_mobile} media="(max-width: 500px)" />
+             { banner?.img_tablet ?<source srcSet={banner.img_tablet} media="(min-width: 501px) and (max-width:1023px)" /> : <source srcSet={banner.img} media="(min-width: 501px) and (max-width:1023px)" />}
+              <source srcSet={banner.img} media="(min-width:1024px)" />
+              <img src={banner.img} className='select-none object-cover w-full h-auto' alt="Banner" />
             </picture>
 
 

@@ -1,0 +1,24 @@
+---
+import AdminAuth from "../../components/admin/AdminAuth";
+import CoberageTable from "../../components/admin/CoberageTable";
+import NavbarAdmin from "../../components/admin/NavbarAdmin";
+import LayoutAdmin from "../../layouts/LayoutAdmin.astro";
+---
+
+<LayoutAdmin title="Dashboard">
+    <AdminAuth  client:load>
+        <div class="w-full min-h-screen">
+            <div class="max-w-6xl m-auto">
+                <div class="flex flex-col gap-[20px]">
+                    <NavbarAdmin client:only/>
+                    <div class="text-2x px-[20px] md:text-4xl text-black/60 font-bold">
+                        Lista de clientes potenciales desde la página web.
+                    </div>
+                    <div>
+                        <CoberageTable client:only  />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </AdminAuth>
+</LayoutAdmin>

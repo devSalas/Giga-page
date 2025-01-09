@@ -12,6 +12,26 @@ export  const distritos =[
         value:3
     },
 ]
+export  const distritosCanete =[
+    {
+        name:"Lunahuaná",
+        value:1
+    }
+]
+export  const distritosLima =[
+    {
+        name:"San Juan de Miraflores",
+        value:1
+    },
+    {
+        name:"Santiago de Surco",
+        value:2
+    },
+    {
+        name:"Villa María del Triunfo",
+        value:3
+    },
+]
 export const provincias =[
     {
         name:"Lima",
